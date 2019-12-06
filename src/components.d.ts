@@ -63,6 +63,12 @@ export namespace Components {
     | "is-warning"
     | "is-danger";
   }
+  interface BalTooltip {
+    /**
+    * Tooltip text
+    */
+    'text': string;
+  }
 }
 
 declare global {
@@ -91,11 +97,18 @@ declare global {
     prototype: HTMLBalToastElement;
     new (): HTMLBalToastElement;
   };
+
+  interface HTMLBalTooltipElement extends Components.BalTooltip, HTMLStencilElement {}
+  var HTMLBalTooltipElement: {
+    prototype: HTMLBalTooltipElement;
+    new (): HTMLBalTooltipElement;
+  };
   interface HTMLElementTagNameMap {
     'bal-button': HTMLBalButtonElement;
     'bal-spinner': HTMLBalSpinnerElement;
     'bal-tag': HTMLBalTagElement;
     'bal-toast': HTMLBalToastElement;
+    'bal-tooltip': HTMLBalTooltipElement;
   }
 }
 
@@ -145,12 +158,19 @@ declare namespace LocalJSX {
     | "is-warning"
     | "is-danger";
   }
+  interface BalTooltip {
+    /**
+    * Tooltip text
+    */
+    'text'?: string;
+  }
 
   interface IntrinsicElements {
     'bal-button': BalButton;
     'bal-spinner': BalSpinner;
     'bal-tag': BalTag;
     'bal-toast': BalToast;
+    'bal-tooltip': BalTooltip;
   }
 }
 
@@ -164,6 +184,7 @@ declare module "@stencil/core" {
       'bal-spinner': LocalJSX.BalSpinner & JSXBase.HTMLAttributes<HTMLBalSpinnerElement>;
       'bal-tag': LocalJSX.BalTag & JSXBase.HTMLAttributes<HTMLBalTagElement>;
       'bal-toast': LocalJSX.BalToast & JSXBase.HTMLAttributes<HTMLBalToastElement>;
+      'bal-tooltip': LocalJSX.BalTooltip & JSXBase.HTMLAttributes<HTMLBalTooltipElement>;
     }
   }
 }

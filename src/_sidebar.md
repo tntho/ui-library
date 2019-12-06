@@ -17,6 +17,7 @@
   - [Spinner](components/bal-spinner/readme.md)
   - [Tag](components/bal-tag/readme.md)
   - [Toast](components/bal-toast/readme.md)
+  - [Tooltip](components/bal-tooltip/readme.md)
 
 - **Development**
 

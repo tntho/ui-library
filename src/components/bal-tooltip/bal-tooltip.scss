@@ -1,0 +1,11 @@
+@import "../../scss/utilities/variables";
+
+$tooltip-background-color: $blue;
+$tooltip-font-size: $size-5;
+$tooltip-font-family: $family-sans-serif;
+$tooltip-padding: 20px;
+$tooltip-radius: 0;
+$tooltip-arrow-size: 8px;
+
+@import "../../scss/bal-ui-library.globals";
+@import "node_modules/bulma-tooltip/src/sass/index.sass";
