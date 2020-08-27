@@ -9,9 +9,9 @@ node_js:
 cache: npm
 
 script:
-  - npm run lint
+  - lerna run lint
   - npm run build
-  - npm run test
+  - lerna run test
   - npm run build
   - ls
   - npm run semantic-release

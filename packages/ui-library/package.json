@@ -1,6 +1,6 @@
 {
   "name": "@baloise/ui-library",
-  "version": "1.49.0",
+  "version": "1.50.0",
   "description": "UI-Libary is an open source library for building amazing web applications that follow the Baloise corporate style guidelines. No design skills required.",
   "license": "MIT",
   "repository": {
@@ -37,8 +37,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "build": "stencil build --es5 --docs --docs-json dist/docs.json",
     "test": "stencil test --spec --e2e",
-    "test.watch": "stencil test --spec --e2e --watchAll",
-    "semantic-release": "semantic-release"
+    "test.watch": "stencil test --spec --e2e --watchAll"
   },
   "devDependencies": {
     "@baloise/eslint-config-typescript": "1.0.0",
@@ -66,8 +65,7 @@
     "npm-run-all": "4.1.5",
     "opn": "6.0.0",
     "prettier": "2.0.5",
-    "puppeteer": "1.20.0",
-    "semantic-release": "17.1.1"
+    "puppeteer": "1.20.0"
   },
   "dependencies": {
     "bulma": "0.9.0",
