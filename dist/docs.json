@@ -1,0 +1,4104 @@
+{
+  "timestamp": "2020-10-23T08:57:43",
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "1.17.3",
+    "typescriptVersion": "3.9.7"
+  },
+  "components": [
+    {
+      "filePath": "./src/components/accordion/accordion.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-accordion",
+      "readme": "# Accordion\r\n\r\nAccordion is a easy way to toggle things.\r\n\r\n## Usage\r\n\r\n```html\r\n<bal-accordion class=\"box\" open-label=\"Details einblenden\" close-label=\"Details ausblenden\">\r\n    <p class=\"is-padded\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\r\n</bal-accordion>\r\n```\r\n\r\n### Types\r\n\r\nThe accordion has 2 type of themes `is-info` and `is-primary`.\r\n\r\n```html\r\n<bal-accordion class=\"box\" type=\"is-info\" open-label=\"Details einblenden\" close-label=\"Details ausblenden\">\r\n    <p class=\"is-padded\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\r\n</bal-accordion>\r\n```\r\n\r\n### Open accordion\r\n\r\n```html\r\n<bal-accordion class=\"box\" collapsed=\"false\" open-label=\"Details einblenden\" close-label=\"Details ausblenden\">\r\n    <p class=\"is-padded\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\r\n</bal-accordion>\r\n```\r\n\r\n### Trigger label & icon\r\n\r\nUse the properties `open-label` & `open-icon` to change the content of the trigger button.\r\n\r\n```html\r\n<bal-accordion class=\"box\" \r\n                open-icon=\"edit\" \r\n                open-label=\"Bearbeiten\" \r\n                close-label=\"Schliessen\"\r\n                close-icon=\"close-big\">\r\n    <p class=\"is-padded\">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\r\n</bal-accordion>\r\n```\r\n\r",
+      "docs": "Accordion is a easy way to toggle things.",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "closeIcon",
+          "type": "string",
+          "mutable": false,
+          "attr": "close-icon",
+          "reflectToAttr": false,
+          "docs": "Bal-Icon of the close trigger button",
+          "docsTags": [],
+          "default": "\"minus\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "closeLabel",
+          "type": "string",
+          "mutable": false,
+          "attr": "close-label",
+          "reflectToAttr": false,
+          "docs": "Label of the close trigger button",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "collapsed",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "collapsed",
+          "reflectToAttr": false,
+          "docs": "Controls if the accordion is collapsed or not",
+          "docsTags": [],
+          "default": "true",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "openIcon",
+          "type": "string",
+          "mutable": false,
+          "attr": "open-icon",
+          "reflectToAttr": false,
+          "docs": "Bal-Icon of the open trigger button",
+          "docsTags": [],
+          "default": "\"plus\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "openLabel",
+          "type": "string",
+          "mutable": false,
+          "attr": "open-label",
+          "reflectToAttr": false,
+          "docs": "Label of the open trigger button",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "type",
+          "type": "\"is-info\" | \"is-primary\"",
+          "mutable": false,
+          "attr": "type",
+          "reflectToAttr": false,
+          "docs": "Type defines the theme of the accordion toggle",
+          "docsTags": [],
+          "default": "\"is-primary\"",
+          "values": [
+            {
+              "value": "is-info",
+              "type": "string"
+            },
+            {
+              "value": "is-primary",
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "close",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "close() => Promise<void>",
+          "parameters": [],
+          "docs": "Close the accordion",
+          "docsTags": []
+        },
+        {
+          "name": "open",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "open() => Promise<void>",
+          "parameters": [],
+          "docs": "Open the accordion",
+          "docsTags": []
+        },
+        {
+          "name": "toggle",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "toggle() => Promise<void>",
+          "parameters": [],
+          "docs": "Triggers the accordion",
+          "docsTags": []
+        }
+      ],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [
+        "bal-button",
+        "bal-icon"
+      ],
+      "dependencyGraph": {
+        "bal-accordion": [
+          "bal-button",
+          "bal-icon"
+        ],
+        "bal-button": [
+          "bal-spinner"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/button/button.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-button",
+      "readme": "# Button\r\n\r\nThe classic button, in different colors, sizes, and states\r\n\r\n## Usage\r\n\r\n```html\r\n<bal-button type=\"is-primary\">Primary</bal-button>\r\n<bal-button type=\"is-info\">Info</bal-button>\r\n<bal-button type=\"is-link\">Link</bal-button>\r\n```\r\n\r\n### Outlined\r\n\r\n```html\r\n<bal-button type=\"is-info\" outlined>Info</bal-button>\r\n```\r\n\r\n### Inverted\r\n\r\n```html\r\n<div class=\"has-background-info is-padded\">\r\n  <bal-button type=\"is-primary\" inverted>Primary</bal-button>\r\n  <bal-button type=\"is-info\" inverted>Info</bal-button>\r\n  <bal-button type=\"is-info\" inverted outlined>Info Outlined</bal-button>\r\n</div>\r\n```\r\n\r\n### Disabled\r\n\r\n```html\r\n<bal-button type=\"is-primary\" disabled>Primary</bal-button>\r\n<bal-button type=\"is-info\" disabled>Info</bal-button>\r\n<bal-button type=\"is-link\" disabled>Link</bal-button>\r\n```\r\n\r\n### Loading\r\n\r\n```html\r\n<bal-button type=\"is-primary\" loading>Primary</bal-button>\r\n<bal-button type=\"is-info\" loading>Info</bal-button>\r\n```\r\n\r\n### Expanded\r\n\r\n```html\r\n<bal-button type=\"is-primary\" expanded>Primary</bal-button>\r\n<br />\r\n<bal-button type=\"is-info\" expanded>Info</bal-button>\r\n```\r\n\r\n### With icons\r\n\r\n```html\r\n<bal-button type=\"is-info\" outlined>\r\n  <bal-icon class=\"icon\" name=\"edit\"></bal-icon>\r\n  <span>Edit</span>\r\n</bal-button>\r\n\r\n<bal-button inverted light>\r\n  <bal-icon class=\"icon\" name=\"edit\"></bal-icon>\r\n  <span>Edit</span>\r\n</bal-button>\r\n```\r\n\r\n### Small buttons\r\n\r\n```html\r\n<bal-button type=\"is-primary\" size=\"is-small\">\r\n  Primary\r\n</bal-button>\r\n<bal-button type=\"is-info\" size=\"is-small\">\r\n  Info\r\n</bal-button>\r\n```\r\n\r\n```html\r\n<bal-button type=\"is-info\" size=\"is-small\" is-square outlined>\r\n  <bal-icon name=\"edit\" size=\"medium\"></bal-icon>\r\n</bal-button>\r\n<bal-button type=\"is-info\" size=\"is-small\" is-square outlined>\r\n  <bal-icon name=\"trash\" size=\"medium\"></bal-icon>\r\n</bal-button>\r\n```\r\n\r",
+      "docs": "The classic button, in different colors, sizes, and states",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "bottemRounded",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "bottem-rounded",
+          "reflectToAttr": false,
+          "docs": "If `true` the bottom corners get rounded",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "dense",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "dense",
+          "reflectToAttr": false,
+          "docs": "If `true` the button is dense",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "disabled",
+          "reflectToAttr": false,
+          "docs": "If `true` the button is disabled",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "expanded",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "expanded",
+          "reflectToAttr": false,
+          "docs": "If `true` the button has a full width",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "inverted",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "inverted",
+          "reflectToAttr": false,
+          "docs": "If `true` the button is inverted",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "isActive",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "is-active",
+          "reflectToAttr": false,
+          "docs": "If `true` the button has a active theme",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "isSquare",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "is-square",
+          "reflectToAttr": false,
+          "docs": "If `true` the width of the buttons is limited",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "light",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "light",
+          "reflectToAttr": false,
+          "docs": "If `true` the button has a light color",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "loading",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "loading",
+          "reflectToAttr": false,
+          "docs": "If `true` the label is hidden and a loading spinner is shown instead.",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "outlined",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "outlined",
+          "reflectToAttr": false,
+          "docs": "If `true` the button is outlined",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "size",
+          "type": "\"\" | \"is-small\"",
+          "mutable": false,
+          "attr": "size",
+          "reflectToAttr": false,
+          "docs": "Size of the button",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "\"\""
+            },
+            {
+              "value": "is-small",
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "type",
+          "type": "\"is-danger\" | \"is-info\" | \"is-link\" | \"is-primary\" | \"is-success\" | \"is-warning\"",
+          "mutable": false,
+          "attr": "type",
+          "reflectToAttr": false,
+          "docs": "The theme type of the button. Given by bulma our css framework.",
+          "docsTags": [],
+          "default": "\"is-primary\"",
+          "values": [
+            {
+              "value": "is-danger",
+              "type": "string"
+            },
+            {
+              "value": "is-info",
+              "type": "string"
+            },
+            {
+              "value": "is-link",
+              "type": "string"
+            },
+            {
+              "value": "is-primary",
+              "type": "string"
+            },
+            {
+              "value": "is-success",
+              "type": "string"
+            },
+            {
+              "value": "is-warning",
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "bal-accordion",
+        "bal-card-button",
+        "bal-datetimepicker",
+        "bal-filter-button",
+        "bal-hint"
+      ],
+      "dependencies": [
+        "bal-spinner"
+      ],
+      "dependencyGraph": {
+        "bal-button": [
+          "bal-spinner"
+        ],
+        "bal-accordion": [
+          "bal-button"
+        ],
+        "bal-card-button": [
+          "bal-button"
+        ],
+        "bal-datetimepicker": [
+          "bal-button"
+        ],
+        "bal-filter-button": [
+          "bal-button"
+        ],
+        "bal-hint": [
+          "bal-button"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/card/card.tsx",
+      "encapsulation": "none",
+      "tag": "bal-card",
+      "readme": "# Card\r\n\r\nThe `bal-card` component is a versatile component that can be combined easily wiht other componets.\r\n\r\n## Usage\r\n\r\n```html\r\n<bal-card>\r\n  <bal-card-title>BaloiseCombi</bal-card-title>\r\n  <bal-card-subtitle>Police number 70/2.937.458</bal-card-subtitle>\r\n\r\n  <bal-card-content>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua.\r\n  </bal-card-content>\r\n\r\n  <bal-card-actions>\r\n    <bal-button>Action</bal-button>\r\n  </bal-card-actions>\r\n</bal-card>\r\n```\r\n\r\n## Inverted style\r\n\r\n```html\r\n<bal-card inverted>\r\n  <bal-card-title inverted>BaloiseCombi</bal-card-title>\r\n  <bal-card-subtitle inverted>Police number 70/2.937.458</bal-card-subtitle>\r\n\r\n  <bal-card-content inverted>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua.\r\n  </bal-card-content>\r\n\r\n  <bal-card-actions>\r\n    <bal-button inverted>Action</bal-button>\r\n  </bal-card-actions>\r\n</bal-card>\r\n```\r\n\r\n### With accordion\r\n\r\nThe combination with the `bal-accordion` is useful to hide details.\r\n\r\n```html\r\n<bal-card>\r\n  <bal-card-title>BaloiseCombi</bal-card-title>\r\n  <bal-card-subtitle>Police number 70/2.937.458</bal-card-subtitle>\r\n\r\n  <bal-accordion>\r\n    <p class=\"is-padded\">\r\n      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n      tempor incididunt ut labore et dolore magna aliqua.\r\n    </p>\r\n  </bal-accordion>\r\n</bal-card>\r\n```\r\n\r\n### With list\r\n\r\nThe position the action buttons to the right side just add the attribute `right` to the component `bal-card-actions`.\r\n\r\n```html\r\n<bal-card>\r\n  <bal-card-title>News</bal-card-title>\r\n\r\n  <bal-card-content>\r\n    <bal-list border>\r\n      <bal-list-item>\r\n        <bal-list-item-content>\r\n          <bal-list-item-title>News A</bal-list-item-title>\r\n        </bal-list-item-content>\r\n        <bal-list-item-icon right>\r\n          <bal-icon size=\"medium\" name=\"nav-go-large\"></bal-icon>\r\n        </bal-list-item-icon>\r\n      </bal-list-item>\r\n      <bal-list-item>\r\n        <bal-list-item-content>\r\n          <bal-list-item-title>News B</bal-list-item-title>\r\n        </bal-list-item-content>\r\n        <bal-list-item-icon right>\r\n          <bal-icon size=\"medium\" name=\"nav-go-large\"></bal-icon>\r\n        </bal-list-item-icon>\r\n      </bal-list-item>\r\n    </bal-list>\r\n  </bal-card-content>\r\n\r\n  <bal-card-actions right>\r\n    <bal-button type=\"is-link\">More</bal-button>\r\n  </bal-card-actions>\r\n</bal-card>\r\n```\r\n\r\n### With avatar\r\n\r\n```html\r\n<bal-card>\r\n  <bal-card-title>Natasha Romanoff</bal-card-title>\r\n  <bal-card-subtitle>Black Widow</bal-card-subtitle>\r\n\r\n  <bal-card-content>\r\n    <div class=\"columns\">\r\n      <div class=\"column\">\r\n        <figure class=\"image is-96x96\">\r\n          <img\r\n            class=\"is-rounded\"\r\n            src=\"https://bulma.io/images/placeholders/128x128.png\"\r\n          />\r\n        </figure>\r\n      </div>\r\n      <div class=\"column\">\r\n        <bal-list disabled>\r\n          <bal-list-item>\r\n            <bal-list-item-icon>\r\n              <bal-icon size=\"medium\" name=\"call\"></bal-icon>\r\n            </bal-list-item-icon>\r\n            <bal-list-item-content>\r\n              <bal-list-item-title>\r\n                <a href=\"tel:+41 789 48 11\">+41 789 48 11</a>\r\n              </bal-list-item-title>\r\n            </bal-list-item-content>\r\n          </bal-list-item>\r\n          <bal-list-item>\r\n            <bal-list-item-icon>\r\n              <bal-icon size=\"medium\" name=\"message\"></bal-icon>\r\n            </bal-list-item-icon>\r\n            <bal-list-item-content>\r\n              <bal-list-item-title>\r\n                <a href=\"mailto:natasha.romanoff@gmail.com\">\r\n                  natasha.romanoff@gmail.com\r\n                </a>\r\n              </bal-list-item-title>\r\n            </bal-list-item-content>\r\n          </bal-list-item>\r\n        </bal-list>\r\n      </div>\r\n    </div>\r\n  </bal-card-content>\r\n</bal-card>\r\n```\r\n\r\n### A Summary card\r\n\r\n```html\r\n<bal-card border flat>\r\n  <bal-card-heading>Insured vehicle</bal-card-heading>\r\n  <bal-card-title>Cupra Ateca</bal-card-title>\r\n  <bal-card-subtitle>Running time: 21.07.2019 - 21.07.2021</bal-card-subtitle>\r\n\r\n  <bal-card-button icon=\"edit\">Edit</bal-card-button>\r\n</bal-card>\r\n```\r\n\r",
+      "docs": "The `bal-card` component is a versatile component that can be combined easily wiht other componets.",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "border",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "border",
+          "reflectToAttr": false,
+          "docs": "If `true` a light blue border is added to the card.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "flat",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "flat",
+          "reflectToAttr": false,
+          "docs": "If `true` the card loses its shadow.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "inverted",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "inverted",
+          "reflectToAttr": false,
+          "docs": "If `true` the card background color becomes blue.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "square",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "square",
+          "reflectToAttr": false,
+          "docs": "If `true` the card loses its border radius.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/card-actions/card-actions.tsx",
+      "encapsulation": "none",
+      "tag": "bal-card-actions",
+      "readme": "# bal-card-actions\r\n\r\n\r\n\r",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "right",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "right",
+          "reflectToAttr": false,
+          "docs": "If `true` the buttons start form right to left.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/card-button/card-button.tsx",
+      "encapsulation": "none",
+      "tag": "bal-card-button",
+      "readme": "# bal-card-button\r\n\r\n\r\n\r",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "icon",
+          "type": "string",
+          "mutable": false,
+          "attr": "icon",
+          "reflectToAttr": false,
+          "docs": "Name of the icon like `edit`.",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [
+        "bal-button",
+        "bal-icon"
+      ],
+      "dependencyGraph": {
+        "bal-card-button": [
+          "bal-button",
+          "bal-icon"
+        ],
+        "bal-button": [
+          "bal-spinner"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/card-content/card-content.tsx",
+      "encapsulation": "none",
+      "tag": "bal-card-content",
+      "readme": "# bal-card-content\r\n\r\n\r\n\r",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "inverted",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "inverted",
+          "reflectToAttr": false,
+          "docs": "If `true` the card text color becomes white.",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/card-heading/card-heading.tsx",
+      "encapsulation": "none",
+      "tag": "bal-card-heading",
+      "readme": "# bal-card-title\r\n\r\n\r\n\r",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/card-step/card-step.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-card-step",
+      "readme": "# CardSteps\r\n\r\n## Usage\r\n\r\n```html\r\n<bal-card-step value=\"item-a\" label=\"Item A\">Hidden Content</bal-card-step>\r\n```\r\n\r\n### Activated\r\n\r\n```html\r\n<bal-card-step value=\"item-a\" label=\"Item A\" active>Visible Content</bal-card-step>\r\n```\r\n\r\n\r",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "active",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "active",
+          "reflectToAttr": false,
+          "docs": "Tell's if the step is active and the content is visible.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "disabled",
+          "reflectToAttr": false,
+          "docs": "If `true` the step is disabled.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "done",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "done",
+          "reflectToAttr": false,
+          "docs": "If `true` the step is done.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "hidden",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "hidden",
+          "reflectToAttr": false,
+          "docs": "If `true` the step is hidden in the steps navigation.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "mutable": false,
+          "attr": "label",
+          "reflectToAttr": false,
+          "docs": "Label for the step.",
+          "docsTags": [],
+          "default": "''",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "mutable": false,
+          "attr": "value",
+          "reflectToAttr": false,
+          "docs": "This is the key of the step.",
+          "docsTags": [],
+          "default": "''",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "getOptions",
+          "returns": {
+            "type": "Promise<CardStepOptions>",
+            "docs": ""
+          },
+          "signature": "getOptions() => Promise<CardStepOptions>",
+          "parameters": [],
+          "docs": "Options of the step like label, value etc.",
+          "docsTags": []
+        },
+        {
+          "name": "setActive",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "setActive(active: boolean) => Promise<void>",
+          "parameters": [],
+          "docs": "Sets the step active.",
+          "docsTags": []
+        }
+      ],
+      "events": [
+        {
+          "event": "balCardStepChanged",
+          "detail": "any",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Emitted when the steps get rendered.",
+          "docsTags": []
+        }
+      ],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/card-steps/card-steps.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-card-steps",
+      "readme": "# CardSteps\r\n\r\nThe steps list is useful for tracking progress in multi steps forms or wizards.\r\n\r\n## Usage\r\n\r\n```html\r\n<bal-card inverted>\r\n    <bal-card-steps navigation inverted>\r\n      <bal-card-step value=\"step-a\" label=\"Step A\" done class=\"has-text-white\">Step A Content</bal-card-step>\r\n      <bal-card-step value=\"step-b\" label=\"Step B\" active class=\"has-text-white\">Step B Content</bal-card-step>\r\n      <bal-card-step value=\"step-c\" label=\"Step C\" class=\"has-text-white\">Step C Content</bal-card-step>\r\n      <bal-card-step value=\"step-d\" label=\"Step D\" disabled class=\"has-text-white\">Step D Content</bal-card-step>\r\n      <bal-card-step value=\"step-e\" label=\"Step E\" disabled class=\"has-text-white\">Step E Content</bal-card-step>\r\n      <bal-card-step value=\"step-f\" label=\"Step F\" hidden class=\"has-text-white\">Step F Content</bal-card-step>\r\n    </bal-card-steps>\r\n</bal-card>\r\n```\r\n\r\n```html\r\n<bal-card>\r\n    <bal-card-steps>\r\n      <bal-card-step value=\"step-a\" label=\"Step A\" done>Step A Content</bal-card-step>\r\n      <bal-card-step value=\"step-b\" label=\"Step B\" active>Step B Content</bal-card-step>\r\n      <bal-card-step value=\"step-c\" label=\"Step C\">Step C Content</bal-card-step>\r\n      <bal-card-step value=\"step-d\" label=\"Step D\" disabled>Step D Content</bal-card-step>\r\n      <bal-card-step value=\"step-e\" label=\"Step E\" disabled>Step E Content</bal-card-step>\r\n    </bal-card-steps>\r\n</bal-card>\r\n```\r\n\r",
+      "docs": "The steps list is useful for tracking progress in multi steps forms or wizards.",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "hidden",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "hidden",
+          "reflectToAttr": false,
+          "docs": "If `true` the steps navigation is hidden.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "inverted",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "inverted",
+          "reflectToAttr": false,
+          "docs": "If `true` a the style is ready for a dark background.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "navigation",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "navigation",
+          "reflectToAttr": false,
+          "docs": "If `true` the steps navigation is on.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "select",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "select(value: string) => Promise<void>",
+          "parameters": [],
+          "docs": "Select a step.",
+          "docsTags": []
+        }
+      ],
+      "events": [
+        {
+          "event": "balCardStepsDidChange",
+          "detail": "CardStepOptions",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Emitted when the changes has finished.",
+          "docsTags": []
+        }
+      ],
+      "listeners": [
+        {
+          "event": "balCardStepChanged",
+          "capture": false,
+          "passive": false
+        }
+      ],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/card-subtitle/card-subtitle.tsx",
+      "encapsulation": "none",
+      "tag": "bal-card-subtitle",
+      "readme": "# bal-card-subtitle\r\n\r\n\r\n\r",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "inverted",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "inverted",
+          "reflectToAttr": false,
+          "docs": "If `true` the card text color becomes white.",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/card-title/card-title.tsx",
+      "encapsulation": "none",
+      "tag": "bal-card-title",
+      "readme": "# bal-card-title\r\n\r\n\r\n\r",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "inverted",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "inverted",
+          "reflectToAttr": false,
+          "docs": "If `true` the card text color becomes white.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/data/data.tsx",
+      "encapsulation": "none",
+      "tag": "bal-data",
+      "readme": "# Data List\r\n\r\nThe component `bal-data` displays key-value pairs.\r\n\r\n## Usage\r\n\r\n```html\r\n<bal-data border>\r\n  <bal-data-item>\r\n    <bal-data-label>Tony</bal-data-label>\r\n    <bal-data-value>Stark</bal-data-value>\r\n  </bal-data-item>\r\n  <bal-data-item>\r\n    <bal-data-label required>Steve</bal-data-label>\r\n    <bal-data-value>Rogers</bal-data-value>\r\n  </bal-data-item>\r\n  <bal-data-item disabled>\r\n    <bal-data-label>Nick</bal-data-label>\r\n    <bal-data-value>Fury</bal-data-value>\r\n  </bal-data-item>\r\n  <bal-data-item>\r\n    <bal-data-label>\r\n      Peter\r\n      <bal-hint>\r\n        <bal-hint-title>Spider-Man</bal-hint-title>\r\n        <bal-hint-text>\r\n          Spider-Man is a fictional superhero created by writer-editor Stan Lee\r\n          and writer-artist Steve Ditko. He first appeared in the anthology\r\n          comic book Amazing Fantasy #15 (August 1962) in the Silver Age of\r\n          Comic Books. He appears in American comic books published by Marvel\r\n          Comics, as well as in a number of movies, television shows, and video\r\n          game adaptations set in the Marvel Universe.\r\n        </bal-hint-text>\r\n      </bal-hint>\r\n    </bal-data-label>\r\n    <bal-data-value>Parker</bal-data-value>\r\n  </bal-data-item>\r\n</bal-data>\r\n```\r\n\r\n### Horizontal\r\n\r\n```html\r\n<bal-data horizontal>\r\n  <bal-data-item>\r\n    <bal-data-label>Tony</bal-data-label>\r\n    <bal-data-value>Stark</bal-data-value>\r\n  </bal-data-item>\r\n  <bal-data-item>\r\n    <bal-data-label>Steve</bal-data-label>\r\n    <bal-data-value>Rogers</bal-data-value>\r\n  </bal-data-item>\r\n  <bal-data-item>\r\n    <bal-data-label>Stephen</bal-data-label>\r\n    <bal-data-value>Strange</bal-data-value>\r\n  </bal-data-item>\r\n</bal-data>\r\n```\r\n\r",
+      "docs": "The component `bal-data` displays key-value pairs.",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "border",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "border",
+          "reflectToAttr": false,
+          "docs": "If `true` a bottom border is added to the data-item.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "horizontal",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "horizontal",
+          "reflectToAttr": false,
+          "docs": "If `true` the data list is horizontal instead of vertical.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/data-item/data-item.tsx",
+      "encapsulation": "none",
+      "tag": "bal-data-item",
+      "readme": "# data-item\r\n\r\n\r\n\r",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "disabled",
+          "reflectToAttr": false,
+          "docs": "If `true` the item gets a lighter font color.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/data-label/data-label.tsx",
+      "encapsulation": "none",
+      "tag": "bal-data-label",
+      "readme": "# data-item-label\r\n\r\n\r\n\r",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "required",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "required",
+          "reflectToAttr": false,
+          "docs": "If `true` an asterix is added after the label.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/data-value/data-value.tsx",
+      "encapsulation": "none",
+      "tag": "bal-data-value",
+      "readme": "# data-item-value\r\n\r\n\r\n\r",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/datepicker/datepicker.tsx",
+      "encapsulation": "none",
+      "tag": "bal-datepicker",
+      "readme": "# Datepicker\r\n\r\nAn input with a simple dropdown for selecting a date.\r\n\r\n## Usage\r\n\r\n```html\r\n<bal-datepicker></bal-datepicker>\r\n```\r\n\r\n## Inverted style\r\n\r\n```html\r\n<div class=\"has-background-info is-padded\">\r\n  <bal-datepicker inverted></bal-datepicker>\r\n</div>\r\n```\r\n\r\n### Set Date\r\n\r\n```html\r\n<bal-datepicker value=\"20.02.2020\"></bal-datepicker>\r\n```\r\n\r\n### Date Range\r\n\r\nYou can limit the date range with min-date and max-date props.\r\n\r\n<script type=\"text/javascript\">\r\n    document.getElementById('bal-datepicker-range-example').addEventListener('balChange', event => { \r\n        console.log('balChange on bal-datepicker-range-example', event) \r\n    });\r\n    document.getElementById('bal-datepicker-range-example').addEventListener('balBlur', event => { \r\n        console.log('balBlur on bal-datepicker-range-example', event) \r\n    });\r\n    document.getElementById('bal-datepicker-filter-example').filter =  function (str) {\r\n      return parseInt(str.substring(0, 2)) == 5;\r\n    };\r\n</script>\r\n\r\n```html\r\n<bal-datepicker id=\"bal-datepicker-range-example\" min-date=\"10.02.2020\" max-date=\"22.02.2020\" value=\"20.02.2020\"></bal-datepicker>\r\n```\r\n\r\n### Filter\r\n\r\n```typescript\r\ndocument.getElementById('bal-datepicker-filter-example').filter =  function (str) {\r\n  return parseInt(str.substring(0, 2)) == 5;\r\n};\r\n```\r\n\r\n```html\r\n<bal-datepicker id=\"bal-datepicker-filter-example\"></bal-datepicker>\r\n```\r\n\r\n### With content\r\n\r\n```html\r\n<bal-datepicker value=\"20.02.2020\">\r\n  <p style=\"text-align: center;\">Choose your arival date!</p>\r\n</bal-datepicker>\r\n```\r\n\r\n### Disabled\r\n\r\n```html\r\n<bal-datepicker disabled value=\"20.02.2020\"></bal-datepicker>\r\n```\r\n\r",
+      "docs": "An input with a simple dropdown for selecting a date.",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "closeOnSelect",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "close-on-select",
+          "reflectToAttr": false,
+          "docs": "Closes the datepicker dropdown after selection",
+          "docsTags": [],
+          "default": "true",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "disabled",
+          "reflectToAttr": false,
+          "docs": "Disable the input",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "filter",
+          "type": "(date: string) => boolean",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "Callback to determine which date in the datepicker should be selectable.",
+          "docsTags": [],
+          "default": "(_) => true",
+          "values": [
+            {
+              "type": "(date: string) => boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "formatLabel",
+          "type": "(date: string) => string",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "Callback to format or modify a changed value pefore display.",
+          "docsTags": [],
+          "default": "(_) => _",
+          "values": [
+            {
+              "type": "(date: string) => string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "inverted",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "inverted",
+          "reflectToAttr": false,
+          "docs": "If `true` the datepicker can be used on blue background.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "language",
+          "type": "string",
+          "mutable": false,
+          "attr": "language",
+          "reflectToAttr": false,
+          "docs": "Language of the datepicker. Possible values are `de`, `fr`,`it` or `en`.",
+          "docsTags": [],
+          "default": "\"de\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "maxDate",
+          "type": "string",
+          "mutable": false,
+          "attr": "max-date",
+          "reflectToAttr": false,
+          "docs": "Latest date available for selection",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "maxYear",
+          "type": "string",
+          "mutable": false,
+          "attr": "max-year",
+          "reflectToAttr": false,
+          "docs": "Latest year available for selection",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "minDate",
+          "type": "string",
+          "mutable": false,
+          "attr": "min-date",
+          "reflectToAttr": false,
+          "docs": "Earliest date available for selection",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "minYear",
+          "type": "string",
+          "mutable": false,
+          "attr": "min-year",
+          "reflectToAttr": false,
+          "docs": "Earliest year available for selection",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "placeholder",
+          "type": "string",
+          "mutable": false,
+          "attr": "placeholder",
+          "reflectToAttr": false,
+          "docs": "Placeholder text to render if no date has been selected.",
+          "docsTags": [],
+          "default": "\"Click to select...\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "mutable": true,
+          "attr": "value",
+          "reflectToAttr": false,
+          "docs": "The value of the datepicker with the format `dd.MM.yyyy`.",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "close",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "close() => Promise<void>",
+          "parameters": [],
+          "docs": "Close the datepicker dropdown",
+          "docsTags": []
+        },
+        {
+          "name": "open",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "open() => Promise<void>",
+          "parameters": [],
+          "docs": "Open the datepicker dropdown",
+          "docsTags": []
+        }
+      ],
+      "events": [
+        {
+          "event": "balBlur",
+          "detail": "void",
+          "bubbles": false,
+          "cancelable": false,
+          "composed": true,
+          "docs": "Emitted when the toggle loses focus.",
+          "docsTags": []
+        },
+        {
+          "event": "balChange",
+          "detail": "string",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Triggers when the value of the datepicker is changed",
+          "docsTags": []
+        }
+      ],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "bal-datetimepicker"
+      ],
+      "dependencies": [
+        "bal-dropdown",
+        "bal-icon"
+      ],
+      "dependencyGraph": {
+        "bal-datepicker": [
+          "bal-dropdown",
+          "bal-icon"
+        ],
+        "bal-dropdown": [
+          "bal-icon",
+          "bal-field"
+        ],
+        "bal-field": [
+          "bal-icon"
+        ],
+        "bal-datetimepicker": [
+          "bal-datepicker"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/datetimepicker/datetimepicker.tsx",
+      "encapsulation": "none",
+      "tag": "bal-datetimepicker",
+      "readme": "# Datetimepicker\r\n\r\nAn input with a simple dropdown for selecting a date and a time.\r\n\r\n## Usage\r\n\r\n<script type=\"text/javascript\">\r\n    document.getElementById('bal-datetimepicker-select-example').addEventListener('balDatetimeChange', event => { \r\n        console.log('balDatetimeChange on bal-datetimepicker-select-example', event) \r\n    });\r\n    document.getElementById('bal-datetimepicker-select-example').addEventListener('balBlur', event => { \r\n        console.log('balBlur on bal-datetimepicker-select-example', event) \r\n    });\r\n    document.getElementById('bal-datetimepicker-filter-example').dateFilter =  function (str) {\r\n      return parseInt(str.substring(0, 2)) == 5;\r\n    };\r\n</script>\r\n\r\n```html\r\n<bal-datetimepicker id=\"bal-datetimepicker-select-example\"></bal-datetimepicker>\r\n```\r\n\r\n## Inverted style\r\n\r\n```html\r\n<div class=\"has-background-info is-padded\">\r\n<bal-datetimepicker id=\"bal-datetimepicker-select-example\" inverted></bal-datetimepicker>\r\n</div>\r\n```\r\n\r\n### Set Date\r\n\r\n```html\r\n<bal-datetimepicker value=\"20.02.2020 09:30\"></bal-datetimepicker>\r\n```\r\n\r\n### Datetime Range\r\n\r\nYou can limit the date range with min-date and max-date props.\r\n\r\n```html\r\n<bal-datetimepicker value=\"20.02.2020 09:30\" min-datetime=\"10.02.2020 9:30\" max-datetime=\"22.02.2020 18:00\"></bal-datetimepicker>\r\n```\r\n\r\n### Date Filter\r\n\r\n```typescript\r\ndocument.getElementById('bal-datetimepicker-filter-example').dateFilter =  function (str) {\r\n  return parseInt(str.substring(0, 2)) == 5;\r\n};\r\n```\r\n\r\n```html\r\n<bal-datetimepicker id=\"bal-datetimepicker-filter-example\"></bal-datetimepicker>\r\n```\r\n\r\n### Disabled\r\n\r\n```html\r\n<bal-datetimepicker disabled value=\"20.02.2020 09:30\"></bal-datetimepicker>\r\n```\r\n\r",
+      "docs": "An input with a simple dropdown for selecting a date and a time.",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "dateFilter",
+          "type": "(date: string) => boolean",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "Callback to determine which date in the datetimepicker should be selectable.",
+          "docsTags": [],
+          "default": "(_) => true",
+          "values": [
+            {
+              "type": "(date: string) => boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "disabled",
+          "reflectToAttr": false,
+          "docs": "Disable the input",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "inverted",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "inverted",
+          "reflectToAttr": false,
+          "docs": "If `true` the datetimepicker can be used on blue background.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "maxDatetime",
+          "type": "string",
+          "mutable": false,
+          "attr": "max-datetime",
+          "reflectToAttr": false,
+          "docs": "Latest date available for selection",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "maxYear",
+          "type": "string",
+          "mutable": false,
+          "attr": "max-year",
+          "reflectToAttr": false,
+          "docs": "Latest year available for selection",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "minDatetime",
+          "type": "string",
+          "mutable": false,
+          "attr": "min-datetime",
+          "reflectToAttr": false,
+          "docs": "Earliest datetime available for selection",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "minYear",
+          "type": "string",
+          "mutable": false,
+          "attr": "min-year",
+          "reflectToAttr": false,
+          "docs": "Earliest year available for selection",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "placeholder",
+          "type": "string",
+          "mutable": false,
+          "attr": "placeholder",
+          "reflectToAttr": false,
+          "docs": "Placeholder text to render if no date has been selected.",
+          "docsTags": [],
+          "default": "\"Click to select...\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "mutable": true,
+          "attr": "value",
+          "reflectToAttr": false,
+          "docs": "The value of the timepicke with the format `dd.MM.yyyy`.",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "close",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "close() => Promise<void>",
+          "parameters": [],
+          "docs": "Close the timepicke dropdown",
+          "docsTags": []
+        },
+        {
+          "name": "open",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "open() => Promise<void>",
+          "parameters": [],
+          "docs": "Open the timepicke dropdown",
+          "docsTags": []
+        }
+      ],
+      "events": [
+        {
+          "event": "balBlur",
+          "detail": "void",
+          "bubbles": false,
+          "cancelable": false,
+          "composed": true,
+          "docs": "Emitted when the toggle loses focus.",
+          "docsTags": []
+        },
+        {
+          "event": "balDatetimeChange",
+          "detail": "string",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Triggers when the value of the timepicke is changed",
+          "docsTags": []
+        }
+      ],
+      "listeners": [
+        {
+          "event": "keydown",
+          "capture": false,
+          "passive": false
+        }
+      ],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [
+        "bal-datepicker",
+        "bal-button",
+        "bal-icon",
+        "bal-timeinput"
+      ],
+      "dependencyGraph": {
+        "bal-datetimepicker": [
+          "bal-datepicker",
+          "bal-button",
+          "bal-icon",
+          "bal-timeinput"
+        ],
+        "bal-datepicker": [
+          "bal-dropdown",
+          "bal-icon"
+        ],
+        "bal-dropdown": [
+          "bal-icon",
+          "bal-field"
+        ],
+        "bal-field": [
+          "bal-icon"
+        ],
+        "bal-button": [
+          "bal-spinner"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/dropdown/dropdown.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-dropdown",
+      "readme": "# Dropdown\r\n\r\n## Usage\r\n\r\n```html\r\n<bal-dropdown id=\"bal-dropdown-example\">\r\n  <bal-dropdown-option value=\"1\" label=\"Ant-Man\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"2\" label=\"Black Panter\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"3\" label=\"Black Widow\"></bal-dropdown-option>\r\n</bal-dropdown>\r\n```\r\n\r\nIt can also deal with large content:\r\n\r\n```html\r\n<bal-dropdown>\r\n  <bal-dropdown-option value=\"1\" label=\"Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooongcat\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"2\" label=\"Loooooooooooooooooooooooooooooooooooooooooooooooongcat\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"3\" label=\"Looooooooooooooooooooooooooooooooooooooooooongcat\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"4\" label=\"Loooooooooooooooooooooooooooooooooooooooongcat\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"5\" label=\"Looooooooooooooooooooooooooooooooooooongcat\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"6\" label=\"Looooooooooooooooooooooooooooooooongcat\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"7\" label=\"Longcat\"></bal-dropdown-option>\r\n</bal-dropdown>\r\n```\r\n\r\n<script type=\"text/javascript\">\r\n    document.getElementById('bal-dropdown-example').value = {\r\n        label: 'Black Panter',\r\n        value: '2'\r\n    }\r\n    document.getElementById('bal-dropdown-example').addEventListener('balBlur', event => { \r\n        console.log('balBlur on bal-dropdown-example', event) \r\n    })\r\n    document.getElementById('bal-dropdown-typeahead-example').addEventListener('balInput', event => { \r\n        console.log('balInput on bal-dropdown-typeahead-example', event) \r\n    })\r\n    document.getElementById('bal-dropdown-typeahead-example').addEventListener('balChange', event => { \r\n        console.log('balChange on bal-dropdown-typeahead-example', event) \r\n    })\r\n    document.getElementById('bal-dropdown-typeahead-example').addEventListener('balBlur', event => { \r\n        console.log('balBlur on bal-dropdown-typeahead-example', event) \r\n    })\r\n</script>\r\n\r\n### Custom empty message\r\n\r\n```html\r\n<bal-dropdown empty>\r\n  <bal-dropdown-option value=\"1\" label=\"Ant-Man\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"2\" label=\"Black Panter\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"3\" label=\"Black Widow\"></bal-dropdown-option>\r\n  <span slot=\"is-empty\">No Results here! :-(</span>\r\n</bal-dropdown>\r\n```\r\n\r\n### Custom options style\r\n\r\n```html\r\n<bal-dropdown>\r\n  <bal-dropdown-option value=\"1\" search-term=\"Ant Man San Franciso\" label=\"Ant-Man\">\r\n    <b>Ant Man</b><br>\r\n    <span>San Franciso</span>\r\n  </bal-dropdown-option>\r\n  <bal-dropdown-option value=\"2\" search-term=\"Black Panter Wakanda\" label=\"Black Panter\">\r\n   <b>Black Panter</b><br>\r\n   <span>Wakanda</span>\r\n  </bal-dropdown-option>\r\n  <bal-dropdown-option value=\"3\" search-term=\"Black Widow Russia\" label=\"Black Widow\">\r\n   <b>Black Widow</b><br>\r\n   <span>Russia</span>\r\n  </bal-dropdown-option>\r\n</bal-dropdown>\r\n```\r\n\r\n### Inverted style\r\n\r\n```html\r\n<div class=\"has-background-info is-padded\">\r\n  <bal-dropdown inverted placeholder=\"Select your hero\">\r\n    <bal-dropdown-option value=\"1\" label=\"Ant-Man\"></bal-dropdown-option>\r\n    <bal-dropdown-option value=\"2\" label=\"Black Panter\"></bal-dropdown-option>\r\n    <bal-dropdown-option value=\"3\" label=\"Black Widow\"></bal-dropdown-option>\r\n  </bal-dropdown>\r\n</div>\r\n```\r\n\r\n### Disabled\r\n\r\n```html\r\n<bal-dropdown disabled=\"true\">\r\n  <bal-dropdown-option value=\"1\" label=\"Ant-Man\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"2\" label=\"Black Panter\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"3\" label=\"Black Widow\"></bal-dropdown-option>\r\n</bal-dropdown>\r\n```\r\n\r\n### Typeahead\r\n\r\n```html\r\n<bal-dropdown expanded typeahead id=\"bal-dropdown-typeahead-example\">\r\n  <bal-dropdown-option value=\"1\" label=\"Ant-Man\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"2\" label=\"Black Panter\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"3\" label=\"Black Widow\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"4\" label=\"Captain America\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"5\" label=\"Captain Marvel\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"6\" label=\"Daredevil\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"7\" label=\"Dr. Strange\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"8\" label=\"Hulk\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"9\" label=\"Iron Man\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"10\" label=\"Spider Man\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"11\" label=\"Thor\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"12\" label=\"Wasp\"></bal-dropdown-option>\r\n  <bal-dropdown-option value=\"13\" label=\"Wolverine\"></bal-dropdown-option>\r\n</bal-dropdown>\r\n```\r\n\r\n### Multi-Select\r\n\r\n```html\r\n<bal-dropdown multi-select expanded>\r\n  <bal-dropdown-option checkbox value=\"1\" label=\"Ant-Man\"></bal-dropdown-option>\r\n  <bal-dropdown-option checkbox value=\"2\" label=\"Black Panter\"></bal-dropdown-option>\r\n  <bal-dropdown-option checkbox value=\"3\" label=\"Black Widow\"></bal-dropdown-option>\r\n  <bal-dropdown-option checkbox value=\"4\" label=\"Captain America\"></bal-dropdown-option>\r\n  <bal-dropdown-option checkbox value=\"5\" label=\"Captain Marvel\"></bal-dropdown-option>\r\n  <bal-dropdown-option checkbox value=\"6\" label=\"Daredevil\"></bal-dropdown-option>\r\n  <bal-dropdown-option checkbox value=\"7\" label=\"Dr. Strange\"></bal-dropdown-option>\r\n  <bal-dropdown-option checkbox value=\"8\" label=\"Hulk\"></bal-dropdown-option>\r\n</bal-dropdown>\r\n```\r\n\r\n#### With typeahead\r\n\r\n```html\r\n<bal-dropdown multi-select typeahead expanded>\r\n  <bal-dropdown-option checkbox value=\"1\" label=\"Ant-Man\"></bal-dropdown-option>\r\n  <bal-dropdown-option checkbox value=\"2\" label=\"Black Panter\"></bal-dropdown-option>\r\n  <bal-dropdown-option checkbox value=\"3\" label=\"Black Widow\"></bal-dropdown-option>\r\n  <bal-dropdown-option checkbox value=\"4\" label=\"Captain America\"></bal-dropdown-option>\r\n  <bal-dropdown-option checkbox value=\"5\" label=\"Captain Marvel\"></bal-dropdown-option>\r\n  <bal-dropdown-option checkbox value=\"6\" label=\"Daredevil\"></bal-dropdown-option>\r\n  <bal-dropdown-option checkbox value=\"7\" label=\"Dr. Strange\"></bal-dropdown-option>\r\n  <bal-dropdown-option checkbox value=\"8\" label=\"Hulk\"></bal-dropdown-option>\r\n  <bal-dropdown-option checkbox value=\"9\" label=\"Iron Man\"></bal-dropdown-option>\r\n  <bal-dropdown-option checkbox value=\"10\" label=\"Spider Man\"></bal-dropdown-option>\r\n  <bal-dropdown-option checkbox value=\"11\" label=\"Thor\"></bal-dropdown-option>\r\n  <bal-dropdown-option checkbox value=\"12\" label=\"Wasp\"></bal-dropdown-option>\r\n  <bal-dropdown-option checkbox value=\"13\" label=\"Wolverine\"></bal-dropdown-option>\r\n  <span slot=\"no-search-results\">No results here with your search term! :-(</span>\r\n</bal-dropdown>\r\n```\r\n\r",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "disabled",
+          "reflectToAttr": false,
+          "docs": "If `true`, the user cannot interact with the input.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "empty",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "empty",
+          "reflectToAttr": false,
+          "docs": "If `true` the dropdown shows the empty message",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "expanded",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "expanded",
+          "reflectToAttr": false,
+          "docs": "If `true`, the component uses the whole width.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "fixed",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "fixed",
+          "reflectToAttr": false,
+          "docs": "If `true`, the height of the dropdown content is fixed.",
+          "docsTags": [],
+          "default": "true",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "inverted",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "inverted",
+          "reflectToAttr": false,
+          "docs": "If `true` the dropdown can be used on blue background.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "multiSelect",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "multi-select",
+          "reflectToAttr": false,
+          "docs": "If `true` the dropdown allows multiple selection",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "placeholder",
+          "type": "string",
+          "mutable": false,
+          "attr": "placeholder",
+          "reflectToAttr": false,
+          "docs": "Instructional text that shows before the input has a value.",
+          "docsTags": [],
+          "default": "''",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "readonly",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "readonly",
+          "reflectToAttr": false,
+          "docs": "If `true`, the user cannot interact with the input.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "triggerIcon",
+          "type": "string",
+          "mutable": false,
+          "attr": "trigger-icon",
+          "reflectToAttr": false,
+          "docs": "Defines the trigger icon on the right site.",
+          "docsTags": [],
+          "default": "'caret-down'",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "typeahead",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "typeahead",
+          "reflectToAttr": false,
+          "docs": "If `true`, the use can search for the option.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": "Option<any> | Option<any>[]",
+          "mutable": false,
+          "reflectToAttr": false,
+          "docs": "The value of the selected dropdown item.",
+          "docsTags": [],
+          "default": "null",
+          "values": [
+            {
+              "type": "Option<any>"
+            },
+            {
+              "type": "Option<any>[]"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "close",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "close() => Promise<void>",
+          "parameters": [],
+          "docs": "Closes the dropdown menu.",
+          "docsTags": []
+        },
+        {
+          "name": "getSelected",
+          "returns": {
+            "type": "Promise<Option<any> | Option<any>[]>",
+            "docs": ""
+          },
+          "signature": "getSelected() => Promise<Option<any> | Option<any>[]>",
+          "parameters": [],
+          "docs": "Returns the value of the dropdown.",
+          "docsTags": []
+        },
+        {
+          "name": "open",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "open() => Promise<void>",
+          "parameters": [],
+          "docs": "Open the dropdown menu.",
+          "docsTags": []
+        },
+        {
+          "name": "select",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "select(option: Option<any>) => Promise<void>",
+          "parameters": [],
+          "docs": "Selects an option.",
+          "docsTags": []
+        },
+        {
+          "name": "toggle",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "toggle() => Promise<void>",
+          "parameters": [],
+          "docs": "Open & closes the dropdown.",
+          "docsTags": []
+        }
+      ],
+      "events": [
+        {
+          "event": "balBlur",
+          "detail": "void",
+          "bubbles": false,
+          "cancelable": false,
+          "composed": true,
+          "docs": "Emitted when the toggle loses focus.",
+          "docsTags": []
+        },
+        {
+          "event": "balChange",
+          "detail": "Option<any>",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Emitted when the checked property has changed.",
+          "docsTags": []
+        },
+        {
+          "event": "balFocus",
+          "detail": "void",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Emitted when the toggle has focus..",
+          "docsTags": []
+        },
+        {
+          "event": "balInput",
+          "detail": "string",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Emitted when containing input field raises an input event.",
+          "docsTags": []
+        }
+      ],
+      "listeners": [
+        {
+          "event": "keyup",
+          "target": "document",
+          "capture": false,
+          "passive": false
+        },
+        {
+          "event": "click",
+          "target": "document",
+          "capture": false,
+          "passive": false
+        },
+        {
+          "event": "keyup",
+          "capture": false,
+          "passive": false
+        }
+      ],
+      "styles": [],
+      "slots": [],
+      "parts": [
+        {
+          "name": "content-options",
+          "docs": ""
+        },
+        {
+          "name": "input",
+          "docs": ""
+        }
+      ],
+      "dependents": [
+        "bal-datepicker"
+      ],
+      "dependencies": [
+        "bal-icon",
+        "bal-field"
+      ],
+      "dependencyGraph": {
+        "bal-dropdown": [
+          "bal-icon",
+          "bal-field"
+        ],
+        "bal-field": [
+          "bal-icon"
+        ],
+        "bal-datepicker": [
+          "bal-dropdown"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/dropdown-option/dropdown-option.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-dropdown-option",
+      "readme": "# Dropdown Option\r\n\r\nA basic dropdown option.\r\n\r\n## Usage\r\n\r\n```html\r\n<bal-dropdown-option value=\"1\" label=\"Label\"></bal-dropdown-option>\r\n```\r\n\r\n### Activated\r\n\r\n```html\r\n<bal-dropdown-option\r\n  activated=\"true\"\r\n  value=\"1\"\r\n  label=\"Label\"\r\n></bal-dropdown-option>\r\n```\r\n\r\n### Highlighted\r\n\r\n```html\r\n<bal-dropdown-option\r\n  highlight=\"bel\"\r\n  value=\"1\"\r\n  label=\"Label\"\r\n></bal-dropdown-option>\r\n```\r\n\r\n### With Icons\r\n\r\n```html\r\n<bal-dropdown-option\r\n  icon=\"account\"\r\n  value=\"1\"\r\n  label=\"Label\"\r\n></bal-dropdown-option>\r\n```\r\n\r\n### With Custom Style\r\n\r\n```html\r\n<bal-dropdown-option \r\n    value=\"1\" \r\n    label=\"Black Widow\"\r\n    search-term=\"Black Widow Russia\" >\r\n    <b>Black Widow</b><br>\r\n    <span>Russia</span>\r\n</bal-dropdown-option>\r\n```\r\n\r\n### With a Checkbox\r\n\r\n```html\r\n<bal-dropdown-option\r\n  activated\r\n  checkbox\r\n  icon=\"account\"\r\n  value=\"1\"\r\n  label=\"Label\"\r\n></bal-dropdown-option>\r\n<bal-dropdown-option\r\n  checkbox\r\n  icon=\"account\"\r\n  value=\"1\"\r\n  label=\"Label\"\r\n></bal-dropdown-option>\r\n```\r\n\r",
+      "docs": "A basic dropdown option.",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "checkbox",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "checkbox",
+          "reflectToAttr": false,
+          "docs": "Use checkbox for multi-select",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "focused",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "focused",
+          "reflectToAttr": false,
+          "docs": "If `true` the option is focused",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "highlight",
+          "type": "string",
+          "mutable": false,
+          "attr": "highlight",
+          "reflectToAttr": false,
+          "docs": "Tells witch part of the label should be highlighted",
+          "docsTags": [],
+          "default": "''",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "mutable": false,
+          "attr": "icon",
+          "reflectToAttr": false,
+          "docs": "Baloise icon as a prefix",
+          "docsTags": [],
+          "default": "''",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "mutable": false,
+          "attr": "label",
+          "reflectToAttr": false,
+          "docs": "The value of the dropdown item. This value will be returned by the parent <bal-dropdown> element.",
+          "docsTags": [],
+          "default": "''",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "searchTerm",
+          "type": "string",
+          "mutable": false,
+          "attr": "search-term",
+          "reflectToAttr": false,
+          "docs": "If a slot is used instead of label attribute use this value to hide and display the dropdown option.",
+          "docsTags": [],
+          "default": "''",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "selected",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "selected",
+          "reflectToAttr": false,
+          "docs": "If `true` the option is selected",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": "any",
+          "mutable": false,
+          "attr": "value",
+          "reflectToAttr": false,
+          "docs": "The value of the dropdown item. This value will be returned by the parent <bal-dropdown> element.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "any"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "isHidden",
+          "returns": {
+            "type": "Promise<boolean>",
+            "docs": ""
+          },
+          "signature": "isHidden() => Promise<boolean>",
+          "parameters": [],
+          "docs": "",
+          "docsTags": []
+        }
+      ],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [
+        "bal-icon"
+      ],
+      "dependencyGraph": {
+        "bal-dropdown-option": [
+          "bal-icon"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/field/field.tsx",
+      "encapsulation": "none",
+      "tag": "bal-field",
+      "readme": "# Field\r\n\r\nAll generic form field, designed for consistency \r\n\r\n## Usage\r\n\r\n```html\r\n<bal-field label=\"Firstname\">\r\n    <input class=\"input\" placeholder=\"Enter firstname here\" />\r\n</bal-field>\r\n```\r\n\r\n### Inverted style\r\n\r\n```html\r\n<div class=\"has-background-info is-padded\" >\r\n    <bal-field label=\"Firstname\" validation-message=\"Field is required\" inverted>\r\n        <input class=\"input\" placeholder=\"Enter firstname here\" />\r\n    </bal-field>\r\n</div>\r\n```\r\n\r\n###  Validation\r\n\r\n```html\r\n<bal-field label=\"Lastname\" required validation-message=\"Field is required\">\r\n    <input class=\"input\" placeholder=\"Enter lastname here\" />\r\n</bal-field>\r\n```\r\n\r\n### Icons\r\n\r\n```html\r\n<bal-field label=\"Lastname\" icon-left=\"account\" icon-right=\"check\">\r\n    <input class=\"input\" placeholder=\"Enter lastname here\" />\r\n</bal-field>\r\n```\r\n\r\n\r",
+      "docs": "All generic form field, designed for consistency",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "iconLeft",
+          "type": "string",
+          "mutable": false,
+          "attr": "icon-left",
+          "reflectToAttr": false,
+          "docs": "Baloise icon for the left side of the input",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "iconRight",
+          "type": "string",
+          "mutable": false,
+          "attr": "icon-right",
+          "reflectToAttr": false,
+          "docs": "Baloise icon for the right side of the input",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "inverted",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "inverted",
+          "reflectToAttr": false,
+          "docs": "If `true` the field can be used on blue background.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "mutable": false,
+          "attr": "label",
+          "reflectToAttr": false,
+          "docs": "Label text",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "required",
+          "reflectToAttr": false,
+          "docs": "If `true` a asterix (*) is added to the label text",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "validationMessage",
+          "type": "string",
+          "mutable": false,
+          "attr": "validation-message",
+          "reflectToAttr": false,
+          "docs": "Validation message text",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "bal-dropdown"
+      ],
+      "dependencies": [
+        "bal-icon"
+      ],
+      "dependencyGraph": {
+        "bal-field": [
+          "bal-icon"
+        ],
+        "bal-dropdown": [
+          "bal-field"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/file-upload/file-upload.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-file-upload",
+      "readme": "# File Upload\r\n\r\nThe `bal-file-upload` is all in one component. It supports drag&drop and the normal file upload dialog of the browser.\r\n\r\n## Usage\r\n\r\n<div id=\"bal-file-upload-messages\" class=\"bal-app\"></div>\r\n\r\n```html\r\n<bal-file-upload\r\n  id=\"bal-file-upload-example\"\r\n  accept=\"image/png,image/jpeg\"\r\n  max-files=\"3\"\r\n  max-file-size=\"1000000\"\r\n  max-bundle-size=\"1000000\"\r\n></bal-file-upload>\r\n```\r\n\r\n<script type=\"text/javascript\">\r\n    var messages = [];\r\n    document\r\n        .getElementById('bal-file-upload-example')\r\n        .addEventListener('balFileUploadRejectedFile', event => { \r\n            var div = document.createElement('div');\r\n            var text = document.createTextNode('The file \"' + event.detail.file.name\r\n                + '\" could not be uploaded, because of \"' + event.detail.reasons.join(', ') + '\"');\r\n            div.appendChild(text);\r\n            div.setAttribute('class', 'notification is-warning');\r\n            document.getElementById('bal-file-upload-messages').appendChild(div)\r\n    });\r\n</script>\r\n\r",
+      "docs": "The `bal-file-upload` is all in one component. It supports drag&drop and the normal file upload dialog of the browser.",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "accept",
+          "type": "string",
+          "mutable": false,
+          "attr": "accept",
+          "reflectToAttr": false,
+          "docs": "Accepted MIME-Types like `image/png,image/jpeg`.",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "disabled",
+          "reflectToAttr": false,
+          "docs": "If `true` the button is disabled",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "mutable": false,
+          "attr": "label",
+          "reflectToAttr": false,
+          "docs": "Label of the drop area.",
+          "docsTags": [],
+          "default": "\"Choose or drop a file...\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "maxBundleSize",
+          "type": "number",
+          "mutable": false,
+          "attr": "max-bundle-size",
+          "reflectToAttr": false,
+          "docs": "Allowed max bundle size in bytes.",
+          "docsTags": [],
+          "default": "undefined",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "maxFileSize",
+          "type": "number",
+          "mutable": false,
+          "attr": "max-file-size",
+          "reflectToAttr": false,
+          "docs": "Allowed max file size in bytes.",
+          "docsTags": [],
+          "default": "undefined",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "maxFiles",
+          "type": "number",
+          "mutable": false,
+          "attr": "max-files",
+          "reflectToAttr": false,
+          "docs": "Allowed number of files in the bundle.",
+          "docsTags": [],
+          "default": "undefined",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "multiple",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "multiple",
+          "reflectToAttr": false,
+          "docs": "If `true` multiple file upload is possible.",
+          "docsTags": [],
+          "default": "true",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [
+        {
+          "event": "balChange",
+          "detail": "File[]",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Triggers when a file is added or removed.",
+          "docsTags": []
+        },
+        {
+          "event": "balFileUploadRejectedFile",
+          "detail": "FileUploadRejectedFile",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Triggers when a file is rejected due to not allowed MIME-Type and so on.",
+          "docsTags": []
+        }
+      ],
+      "listeners": [
+        {
+          "event": "dragenter",
+          "capture": false,
+          "passive": true
+        },
+        {
+          "event": "dragover",
+          "capture": false,
+          "passive": true
+        },
+        {
+          "event": "dragleave",
+          "capture": false,
+          "passive": true
+        },
+        {
+          "event": "drop",
+          "capture": false,
+          "passive": true
+        }
+      ],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [
+        "bal-icon",
+        "bal-list",
+        "bal-list-item",
+        "bal-list-item-icon",
+        "bal-list-item-content",
+        "bal-list-item-title",
+        "bal-list-item-subtitle"
+      ],
+      "dependencyGraph": {
+        "bal-file-upload": [
+          "bal-icon",
+          "bal-list",
+          "bal-list-item",
+          "bal-list-item-icon",
+          "bal-list-item-content",
+          "bal-list-item-title",
+          "bal-list-item-subtitle"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/filter-button/filter-button.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-filter-button",
+      "readme": "# Filter Button\r\n\r\nThese buttons can be used for filtering lists\r\n\r\n## Usage\r\n\r\n```html\r\n<bal-filter-button id=\"bal-filter-button-1\" active=\"true\"\r\n  >X-Men (12)</bal-filter-button\r\n>\r\n<bal-filter-button>Defenders (4)</bal-filter-button>\r\n<bal-filter-button>Avengers (8)</bal-filter-button>\r\n```\r\n\r\n> Hint: Open the console to see some action.\r\n\r\n<script type=\"text/javascript\">\r\n    document.getElementById('bal-filter-button-1').addEventListener('balChange', event => { \r\n      console.log('bal-filter-button-1 has been changed! value=' + event.detail );\r\n    });\r\n</script>\r\n\r",
+      "docs": "These buttons can be used for filtering lists",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "active",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "active",
+          "reflectToAttr": false,
+          "docs": "If `true` then the button is active/selected",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [
+        {
+          "event": "balChange",
+          "detail": "boolean",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Triggers when the value of the filter-button is changed",
+          "docsTags": []
+        }
+      ],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [
+        "bal-button"
+      ],
+      "dependencyGraph": {
+        "bal-filter-button": [
+          "bal-button"
+        ],
+        "bal-button": [
+          "bal-spinner"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/hint/hint.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-hint",
+      "readme": "# Hint\r\n\r\nDisplay a helper text. Use this to explain complicted form fields.\r\n\r\n## Usage\r\n\r\n```html\r\n<bal-hint>\r\n  <bal-hint-title>Spider-Man</bal-hint-title>\r\n  <bal-hint-text>\r\n    Spider-Man is a fictional superhero created by writer-editor Stan Lee and\r\n    writer-artist Steve Ditko. He first appeared in the anthology comic book\r\n    Amazing Fantasy #15 (August 1962) in the Silver Age of Comic Books. He\r\n    appears in American comic books published by Marvel Comics, as well as in a\r\n    number of movies, television shows, and video game adaptations set in the\r\n    Marvel Universe.\r\n  </bal-hint-text>\r\n</bal-hint>\r\n```\r\n\r\n```html\r\n<bal-field label=\"Firstname\">\r\n  <bal-hint slot=\"hint\">\r\n    <bal-hint-title>Firstname</bal-hint-title>\r\n    <bal-hint-text>\r\n      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy\r\n      eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam\r\n      voluptua.\r\n    </bal-hint-text>\r\n  </bal-hint>\r\n  <input class=\"input\" placeholder=\"Enter firstname here\" />\r\n</bal-field>\r\n```\r\n\r",
+      "docs": "Display a helper text. Use this to explain complicted form fields.",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "closeLabel",
+          "type": "string",
+          "mutable": false,
+          "attr": "close-label",
+          "reflectToAttr": false,
+          "docs": "Text for the close button.",
+          "docsTags": [],
+          "default": "\"Close\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "disabled",
+          "reflectToAttr": false,
+          "docs": "If `true`, the user cannot interact with the input.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "close",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "close() => Promise<void>",
+          "parameters": [],
+          "docs": "Closes the hint box.",
+          "docsTags": []
+        },
+        {
+          "name": "open",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "open() => Promise<void>",
+          "parameters": [],
+          "docs": "Opens the hint box.",
+          "docsTags": []
+        },
+        {
+          "name": "toggle",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "toggle() => Promise<void>",
+          "parameters": [],
+          "docs": "Toggles the hint box.",
+          "docsTags": []
+        }
+      ],
+      "events": [],
+      "listeners": [
+        {
+          "event": "keyup",
+          "target": "document",
+          "capture": false,
+          "passive": false
+        },
+        {
+          "event": "click",
+          "target": "document",
+          "capture": false,
+          "passive": false
+        }
+      ],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [
+        "bal-button"
+      ],
+      "dependencyGraph": {
+        "bal-hint": [
+          "bal-button"
+        ],
+        "bal-button": [
+          "bal-spinner"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/hint-text/hint-text.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-hint-text",
+      "readme": "# bal-hint-text\r\n\r\n\r\n\r",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/hint-title/hint-title.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-hint-title",
+      "readme": "# bal-hint-title\r\n\r\n\r\n\r",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/icon/icon.tsx",
+      "encapsulation": "scoped",
+      "tag": "bal-icon",
+      "readme": "# Icon\r\n\r\nThe preprocessed Baloise SVG icons have been converted to a web font by using [http://fontello.com](http://fontello.com).\r\nThe proprocessing step for each SVG icon included: (done in Adobe Illustrator, but Inkscape should do as well)\r\n\r\n* Converting lines and effects to shapes using (Illustrator: Object > Expand)\r\n* Merge overlapping paths to one path (Illustrator: Use pathfinder)\r\n* Converting geometries and polyongs to paths (Illustrator: Object > Compound Path > Make)\r\n* Remove colors and other styles, as they are not used anyway (optional)\r\n\r\n## Usage\r\n\r\nHere is how you can change the size:\r\n\r\n```html\r\n<bal-icon name=\"date\" size=\"small\"></bal-icon>\r\n<bal-icon name=\"date\"></bal-icon>\r\n<bal-icon name=\"date\" size=\"medium\"></bal-icon>\r\n<bal-icon name=\"date\" size=\"large\"></bal-icon>\r\n```\r\n\r\n## Styling\r\n\r\nHere is how you can change the color:\r\n\r\n```html\r\n<div>\r\n  <style type=\"text/css\" scoped>\r\n  .alert i {\r\n    color: red !important;\r\n  }\r\n  </style>\r\n\r\n  <bal-icon class=\"alert\" name=\"alert-circle\" size=\"medium\"></bal-icon>\r\n</div>\r\n\r\n```\r\n\r\n## Icons\r\n\r\n| Icon | Name |\r\n| ---- | ---- |   \r\n| <bal-icon name=\"account\" size=\"medium\" /> | `account` |   \r\n| <bal-icon name=\"alert-circle\" size=\"medium\" /> | `alert-circle` |   \r\n| <bal-icon name=\"alert\" size=\"medium\" /> | `alert` |   \r\n| <bal-icon name=\"answer\" size=\"medium\" /> | `answer` |   \r\n| <bal-icon name=\"call\" size=\"medium\" /> | `call` |   \r\n| <bal-icon name=\"caret-down\" size=\"medium\" /> | `caret-down` |   \r\n| <bal-icon name=\"caret-left\" size=\"medium\" /> | `caret-left` |   \r\n| <bal-icon name=\"caret-right\" size=\"medium\" /> | `caret-right` |   \r\n| <bal-icon name=\"caret-up\" size=\"medium\" /> | `caret-up` |   \r\n| <bal-icon name=\"check-circle\" size=\"medium\" /> | `check-circle` |   \r\n| <bal-icon name=\"check\" size=\"medium\" /> | `check` |   \r\n| <bal-icon name=\"close-small\" size=\"medium\" /> | `close-small` |   \r\n| <bal-icon name=\"close-big\" size=\"medium\" /> | `close-big` |   \r\n| <bal-icon name=\"close-thin\" size=\"medium\" /> | `close-thin` |   \r\n| <bal-icon name=\"contact\" size=\"medium\" /> | `contact` |   \r\n| <bal-icon name=\"document\" size=\"medium\" /> | `document` |   \r\n| <bal-icon name=\"download\" size=\"medium\" /> | `download` |   \r\n| <bal-icon name=\"edit\" size=\"medium\" /> | `edit` |   \r\n| <bal-icon name=\"date\" size=\"medium\" /> | `date` |   \r\n| <bal-icon name=\"general-consultant\" size=\"medium\" /> | `general-consultant` |   \r\n| <bal-icon name=\"general-edit\" size=\"medium\" /> | `general-edit` |   \r\n| <bal-icon name=\"info\" size=\"medium\" /> | `info` |   \r\n| <bal-icon name=\"info-circle\" size=\"medium\" /> | `info-circle` |   \r\n| <bal-icon name=\"locate\" size=\"medium\" /> | `locate` |   \r\n| <bal-icon name=\"copy\" size=\"medium\" /> | `copy` |   \r\n| <bal-icon name=\"location\" size=\"medium\" /> | `location` |   \r\n| <bal-icon name=\"menu-dots\" size=\"medium\" /> | `menu-dots` |   \r\n| <bal-icon name=\"message\" size=\"medium\" /> | `message` |   \r\n| <bal-icon name=\"minus\" size=\"medium\" /> | `minus` |   \r\n| <bal-icon name=\"menu-bars\" size=\"medium\" /> | `menu-bars` |   \r\n| <bal-icon name=\"nav-back\" size=\"medium\" /> | `nav-back` |   \r\n| <bal-icon name=\"nav-go-large\" size=\"medium\" /> | `nav-go-large` |   \r\n| <bal-icon name=\"nav-go-left-no-padding\" size=\"medium\" /> | `nav-go-left-no-padding` |   \r\n| <bal-icon name=\"nav-go-right-no-padding\" size=\"medium\" /> | `nav-go-right-no-padding` |   \r\n| <bal-icon name=\"nav-success\" size=\"medium\" /> | `nav-success` |   \r\n| <bal-icon name=\"nav-go-up\" size=\"medium\" /> | `nav-go-up` |   \r\n| <bal-icon name=\"plus\" size=\"medium\" /> | `plus` |   \r\n| <bal-icon name=\"nav-go-right\" size=\"medium\" /> | `nav-go-right` |   \r\n| <bal-icon name=\"nav-go-small\" size=\"medium\" /> | `nav-go-small` |   \r\n| <bal-icon name=\"refresh\" size=\"medium\" /> | `refresh` |   \r\n| <bal-icon name=\"nav-go-left\" size=\"medium\" /> | `nav-go-left` |   \r\n| <bal-icon name=\"social-facebook-line\" size=\"medium\" /> | `social-facebook-line` |   \r\n| <bal-icon name=\"social-xing-line\" size=\"medium\" /> | `social-xing-line` |   \r\n| <bal-icon name=\"read-only\" size=\"medium\" /> | `read-only` |   \r\n| <bal-icon name=\"social-linkedin-line\" size=\"medium\" /> | `social-linkedin-line` |   \r\n| <bal-icon name=\"upload\" size=\"medium\" /> | `upload` |   \r\n| <bal-icon name=\"search\" size=\"medium\" /> | `search` |   \r\n| <bal-icon name=\"nav-go-down\" size=\"medium\" /> | `nav-go-down` |   \r\n| <bal-icon name=\"nav-dropdown\" size=\"medium\" /> | `nav-dropdown` |   \r\n| <bal-icon name=\"trash\" size=\"medium\" /> | `trash` | \r\n| <bal-icon name=\"clock\" size=\"medium\" /> | `clock` | \r\n\r\n\r",
+      "docs": "The preprocessed Baloise SVG icons have been converted to a web font by using [http://fontello.com](http://fontello.com).\r\nThe proprocessing step for each SVG icon included: (done in Adobe Illustrator, but Inkscape should do as well)\r\n\r\n* Converting lines and effects to shapes using (Illustrator: Object > Expand)\r\n* Merge overlapping paths to one path (Illustrator: Use pathfinder)\r\n* Converting geometries and polyongs to paths (Illustrator: Object > Compound Path > Make)\r\n* Remove colors and other styles, as they are not used anyway (optional)",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "isLeft",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "is-left",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "isRight",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "is-right",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "mutable": false,
+          "attr": "name",
+          "reflectToAttr": false,
+          "docs": "The name of the icon without the bal-icon prefix.",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "size",
+          "type": "\"\" | \"large\" | \"medium\" | \"small\"",
+          "mutable": false,
+          "attr": "size",
+          "reflectToAttr": false,
+          "docs": "Defines the size of the icon.",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "\"\""
+            },
+            {
+              "value": "large",
+              "type": "string"
+            },
+            {
+              "value": "medium",
+              "type": "string"
+            },
+            {
+              "value": "small",
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "bal-accordion",
+        "bal-card-button",
+        "bal-datepicker",
+        "bal-datetimepicker",
+        "bal-dropdown",
+        "bal-dropdown-option",
+        "bal-field",
+        "bal-file-upload",
+        "bal-pagination"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "bal-accordion": [
+          "bal-icon"
+        ],
+        "bal-card-button": [
+          "bal-icon"
+        ],
+        "bal-datepicker": [
+          "bal-icon"
+        ],
+        "bal-datetimepicker": [
+          "bal-icon"
+        ],
+        "bal-dropdown": [
+          "bal-icon"
+        ],
+        "bal-dropdown-option": [
+          "bal-icon"
+        ],
+        "bal-field": [
+          "bal-icon"
+        ],
+        "bal-file-upload": [
+          "bal-icon"
+        ],
+        "bal-pagination": [
+          "bal-icon"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/list/list.tsx",
+      "encapsulation": "none",
+      "tag": "bal-list",
+      "readme": "# List\r\n\r\nLists present content in a way that makes it easy to identify a specific item in a collection.\r\n\r\n## Usage\r\n\r\n```html\r\n<bal-list disabled class=\"box is-padded\">\r\n  <bal-list-item>\r\n    <bal-list-item-content>\r\n      <bal-list-item-title>Single-line item</bal-list-item-title>\r\n    </bal-list-item-content>\r\n  </bal-list-item>\r\n\r\n  <bal-list-item>\r\n    <bal-list-item-content>\r\n      <bal-list-item-title>Two-line item</bal-list-item-title>\r\n      <bal-list-item-subtitle>Secondary text</bal-list-item-subtitle>\r\n    </bal-list-item-content>\r\n  </bal-list-item>\r\n</bal-list>\r\n```\r\n\r\n### With borders\r\n\r\n```html\r\n<bal-list border>\r\n  <bal-list-item>\r\n    <bal-list-item-content>\r\n      <bal-list-item-title>Single-line item</bal-list-item-title>\r\n    </bal-list-item-content>\r\n  </bal-list-item>\r\n  <bal-list-item selected>\r\n    <bal-list-item-content>\r\n      <bal-list-item-title>Selected item</bal-list-item-title>\r\n    </bal-list-item-content>\r\n  </bal-list-item>\r\n  <bal-list-item disabled>\r\n    <bal-list-item-content>\r\n      <bal-list-item-title>Two-line item</bal-list-item-title>\r\n      <bal-list-item-subtitle>Secondary text</bal-list-item-subtitle>\r\n    </bal-list-item-content>\r\n  </bal-list-item>\r\n</bal-list>\r\n```\r\n\r\n### Inverted\r\n\r\n```html\r\n<div class=\"has-background-info is-padded\">\r\n  <bal-list inverted border>\r\n    <bal-list-item>\r\n      <bal-list-item-content>\r\n        <bal-list-item-title>Two-line item</bal-list-item-title>\r\n        <bal-list-item-subtitle>Secondary text</bal-list-item-subtitle>\r\n      </bal-list-item-content>\r\n    </bal-list-item>\r\n    <bal-list-item>\r\n      <bal-list-item-content>\r\n        <bal-list-item-title>Two-line item</bal-list-item-title>\r\n        <bal-list-item-subtitle>Secondary text</bal-list-item-subtitle>\r\n      </bal-list-item-content>\r\n    </bal-list-item>\r\n  </bal-list>\r\n</div>\r\n```\r\n\r\n### With Icons\r\n\r\n```html\r\n<bal-list class=\"box is-padded\">\r\n  <bal-list-item>\r\n    <bal-list-item-icon>\r\n      <bal-icon size=\"medium\" name=\"account\"></bal-icon>\r\n    </bal-list-item-icon>\r\n    <bal-list-item-content>\r\n      <bal-list-item-title>Tony Stark</bal-list-item-title>\r\n      <bal-list-item-subtitle>Stark Industries</bal-list-item-subtitle>\r\n    </bal-list-item-content>\r\n  </bal-list-item>\r\n\r\n  <bal-list-item>\r\n    <bal-list-item-icon>\r\n      <bal-icon size=\"medium\" name=\"check\"></bal-icon>\r\n    </bal-list-item-icon>\r\n    <bal-list-item-content>\r\n      <bal-list-item-title class=\"has-text-black\">Avenger</bal-list-item-title>\r\n    </bal-list-item-content>\r\n  </bal-list-item>\r\n\r\n  <bal-list-item>\r\n    <bal-list-item-icon>\r\n      <bal-icon size=\"medium\" name=\"document\"></bal-icon>\r\n    </bal-list-item-icon>\r\n    <bal-list-item-content>\r\n      <bal-list-item-title>Document.pdf</bal-list-item-title>\r\n      <bal-list-item-subtitle>20.03.1998</bal-list-item-subtitle>\r\n    </bal-list-item-content>\r\n    <bal-list-item-icon right>\r\n      <bal-icon size=\"medium\" name=\"download\"></bal-icon>\r\n    </bal-list-item-icon>\r\n  </bal-list-item>\r\n</bal-list>\r\n```\r\n\r\n### Link\r\n\r\n```html\r\n<bal-list class=\"box is-padded\">\r\n  <bal-list-item>\r\n    <bal-list-item-content>\r\n      <bal-list-item-title>Link A</bal-list-item-title>\r\n    </bal-list-item-content>\r\n    <bal-list-item-icon right>\r\n      <bal-icon size=\"medium\" name=\"nav-go-large\"></bal-icon>\r\n    </bal-list-item-icon>\r\n  </bal-list-item>\r\n  <bal-list-item disabled>\r\n    <bal-list-item-content>\r\n      <bal-list-item-title>Disabled Link B</bal-list-item-title>\r\n    </bal-list-item-content>\r\n    <bal-list-item-icon right>\r\n      <bal-icon size=\"medium\" name=\"nav-go-large\"></bal-icon>\r\n    </bal-list-item-icon>\r\n  </bal-list-item>\r\n</bal-list>\r\n```\r\n\r\n### With multiple columns\r\n\r\n```html\r\n<bal-list border class=\"box is-padded\">\r\n  <bal-list-item>\r\n    <bal-list-item-content>\r\n      <div class=\"columns\">\r\n        <div class=\"column\">\r\n          <bal-list-item-title>14.02.2020</bal-list-item-title>\r\n        </div>\r\n        <div class=\"column\">\r\n          <bal-list-item-title>Link A</bal-list-item-title>\r\n        </div>\r\n      </div>\r\n    </bal-list-item-content>\r\n    <bal-list-item-icon right>\r\n      <bal-icon size=\"medium\" name=\"nav-go-large\"></bal-icon>\r\n    </bal-list-item-icon>\r\n  </bal-list-item>\r\n\r\n  <bal-list-item>\r\n    <bal-list-item-content>\r\n      <div class=\"columns\">\r\n        <div class=\"column\">\r\n          <bal-list-item-title>03.04.2020</bal-list-item-title>\r\n        </div>\r\n        <div class=\"column\">\r\n          <bal-list-item-title>Link B</bal-list-item-title>\r\n        </div>\r\n      </div>\r\n    </bal-list-item-content>\r\n    <bal-list-item-icon right>\r\n      <bal-icon size=\"medium\" name=\"nav-go-large\"></bal-icon>\r\n    </bal-list-item-icon>\r\n  </bal-list-item>\r\n</bal-list>\r\n```\r\n\r",
+      "docs": "Lists present content in a way that makes it easy to identify a specific item in a collection.",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "border",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "border",
+          "reflectToAttr": false,
+          "docs": "If `true` each list item has a bottom border",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "disabled",
+          "reflectToAttr": false,
+          "docs": "If `true` the list item can be hovered",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "inverted",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "inverted",
+          "reflectToAttr": false,
+          "docs": "If `true` the list can be used on a dark backround",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "bal-file-upload"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "bal-file-upload": [
+          "bal-list"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/list-item/list-item.tsx",
+      "encapsulation": "none",
+      "tag": "bal-list-item",
+      "readme": "# List Item\r\n\r\n## Usage\r\n\r\n```html\r\n<bal-list-item>\r\n  <bal-list-item-content>\r\n    <bal-list-item-title>Link A</bal-list-item-title>\r\n  </bal-list-item-content>\r\n  <bal-list-item-icon right>\r\n    <bal-icon size=\"medium\" name=\"nav-go-large\"></bal-icon>\r\n  </bal-list-item-icon>\r\n</bal-list-item>\r\n```\r\n\r\n### Selected\r\n\r\n```html\r\n<bal-list-item selected>\r\n  <bal-list-item-content>\r\n    <bal-list-item-title>Link A</bal-list-item-title>\r\n  </bal-list-item-content>\r\n  <bal-list-item-icon right>\r\n    <bal-icon size=\"medium\" name=\"nav-go-large\"></bal-icon>\r\n  </bal-list-item-icon>\r\n</bal-list-item>\r\n```\r\n\r\n### Disabled\r\n\r\n```html\r\n<bal-list-item disabled>\r\n  <bal-list-item-content>\r\n    <bal-list-item-title>Link A</bal-list-item-title>\r\n  </bal-list-item-content>\r\n  <bal-list-item-icon right>\r\n    <bal-icon size=\"medium\" name=\"nav-go-large\"></bal-icon>\r\n  </bal-list-item-icon>\r\n</bal-list-item>\r\n```\r\n\r",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "disabled",
+          "reflectToAttr": false,
+          "docs": "If `true` the list item can be hovered",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "selected",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "selected",
+          "reflectToAttr": false,
+          "docs": "If `true` the list item has a selected theme",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "bal-file-upload"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "bal-file-upload": [
+          "bal-list-item"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/list-item-content/list-item-content.tsx",
+      "encapsulation": "none",
+      "tag": "bal-list-item-content",
+      "readme": "# List Item Content\r\n\r\n\r\n\r",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "bal-file-upload"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "bal-file-upload": [
+          "bal-list-item-content"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/list-item-icon/list-item-icon.tsx",
+      "encapsulation": "none",
+      "tag": "bal-list-item-icon",
+      "readme": "# List Item Icon\r\n\r\n## Usage\r\n\r\n```html\r\n<bal-list-item disabled>\r\n  <bal-list-item-icon>\r\n    <bal-icon size=\"medium\" name=\"document\"></bal-icon>\r\n  </bal-list-item-icon>\r\n  <bal-list-item-content>\r\n    <bal-list-item-title>Document.pdf</bal-list-item-title>\r\n    <bal-list-item-subtitle>20.03.1998</bal-list-item-subtitle>\r\n  </bal-list-item-content>\r\n  <bal-list-item-icon right>\r\n    <bal-icon size=\"medium\" name=\"download\"></bal-icon>\r\n  </bal-list-item-icon>\r\n</bal-list-item>\r\n```\r\n\r",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "right",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "right",
+          "reflectToAttr": false,
+          "docs": "If `true` the icon is on the right side of the list item. Default is the left side.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "bal-file-upload"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "bal-file-upload": [
+          "bal-list-item-icon"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/list-item-subtitle/list-item-subtitle.tsx",
+      "encapsulation": "none",
+      "tag": "bal-list-item-subtitle",
+      "readme": "# List Item Subtitle\r\n\r\n\r\n\r",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "bal-file-upload"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "bal-file-upload": [
+          "bal-list-item-subtitle"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/list-item-title/list-item-title.tsx",
+      "encapsulation": "none",
+      "tag": "bal-list-item-title",
+      "readme": "# List Item Title\r\n\r\n\r\n\r",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "bal-file-upload"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "bal-file-upload": [
+          "bal-list-item-title"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/modal/modal.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-modal",
+      "readme": "# Modal\r\n\r\nA Modal is a dialog that appears on top of the app's body, and must be dismissed by\r\nthe app before interaction can resume.\r\n\r\n```html\r\n<bal-modal id=\"bal-modal-example\">\r\n  <span slot=\"head\">Modal Title</span>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <bal-modal-actions slot=\"foot\">\r\n    <bal-button type=\"is-info\" outlined id=\"bal-modal-close-1\">Okay</bal-button>\r\n    <bal-button type=\"is-link\" id=\"bal-modal-close-2\">Cancel</bal-button>\r\n  </bal-modal-actions>\r\n</bal-modal>\r\n\r\n<bal-button id=\"bal-modal-trigger-example\">Launch Modal</bal-button>\r\n```\r\n\r\n## Customize width\r\n\r\n```html\r\n<bal-modal style=\"--bal-width: 1000px;\" id=\"bal-modal-example-width\">\r\n  <span slot=\"head\">Modal Title</span>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <bal-modal-actions slot=\"foot\">\r\n    <bal-button type=\"is-info\" outlined id=\"bal-modal-close-1-width\"\r\n      >Okay</bal-button\r\n    >\r\n    <bal-button type=\"is-link\" id=\"bal-modal-close-2-width\">Cancel</bal-button>\r\n  </bal-modal-actions>\r\n</bal-modal>\r\n\r\n<bal-button id=\"bal-modal-trigger-example-width\">Launch Modal</bal-button>\r\n```\r\n\r\n## Modal card style\r\n\r\nThe card flag makes the modal element look like a window with three distinct sections separated by visual linses.\r\n\r\n```html\r\n<bal-modal card id=\"bal-modal-card-example\">\r\n  <span slot=\"head\">Modal Title</span>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <bal-modal-actions slot=\"foot\">\r\n    <bal-button type=\"is-info\" outlined id=\"bal-modal-card-close-1\">\r\n      Okay\r\n    </bal-button>\r\n    <bal-button type=\"is-link\" id=\"bal-modal-card-close-2\">Cancel</bal-button>\r\n  </bal-modal-actions>\r\n</bal-modal>\r\n\r\n<bal-button id=\"bal-modal-card-trigger-example\">Launch Modal</bal-button>\r\n```\r\n\r\n<script type=\"text/javascript\">\r\n    document.getElementById('bal-modal-trigger-example').onclick = function() {\r\n        document.getElementById('bal-modal-example').open();\r\n    };\r\n    document.getElementById('bal-modal-close-1').onclick = function() {\r\n        document.getElementById('bal-modal-example').close();\r\n    };\r\n    document.getElementById('bal-modal-close-2').onclick = function() {\r\n        document.getElementById('bal-modal-example').close();\r\n    };\r\n\r\n    document.getElementById('bal-modal-trigger-example-width').onclick = function() {\r\n        document.getElementById('bal-modal-example-width').open();\r\n    };\r\n    document.getElementById('bal-modal-close-1-width').onclick = function() {\r\n        document.getElementById('bal-modal-example-width').close();\r\n    };\r\n    document.getElementById('bal-modal-close-2-width').onclick = function() {\r\n        document.getElementById('bal-modal-example-width').close();\r\n    };\r\n\r\n    document.getElementById('bal-modal-card-trigger-example').onclick = function() {\r\n        document.getElementById('bal-modal-card-example').open();\r\n    };\r\n    document.getElementById('bal-modal-card-close-1').onclick = function() {\r\n        document.getElementById('bal-modal-card-example').close();\r\n    };\r\n    document.getElementById('bal-modal-card-close-2').onclick = function() {\r\n        document.getElementById('bal-modal-card-example').close();\r\n    };\r\n</script>\r\n\r",
+      "docs": "A Modal is a dialog that appears on top of the app's body, and must be dismissed by\r\nthe app before interaction can resume.\r\n\r\n```html\r\n<bal-modal id=\"bal-modal-example\">\r\n  <span slot=\"head\">Modal Title</span>\r\n  <p>\r\n    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\r\n    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\r\n    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\r\n    consequat.\r\n  </p>\r\n  <bal-modal-actions slot=\"foot\">\r\n    <bal-button type=\"is-info\" outlined id=\"bal-modal-close-1\">Okay</bal-button>\r\n    <bal-button type=\"is-link\" id=\"bal-modal-close-2\">Cancel</bal-button>\r\n  </bal-modal-actions>\r\n</bal-modal>\r\n\r\n<bal-button id=\"bal-modal-trigger-example\">Launch Modal</bal-button>\r\n```",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "card",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "card",
+          "reflectToAttr": false,
+          "docs": "Marks this modal as card-style modal, i.e. having visual lines separating head, body, and foot.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "close",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "close() => Promise<void>",
+          "parameters": [],
+          "docs": "",
+          "docsTags": []
+        },
+        {
+          "name": "open",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "open() => Promise<void>",
+          "parameters": [],
+          "docs": "",
+          "docsTags": []
+        }
+      ],
+      "events": [],
+      "listeners": [
+        {
+          "event": "keyup",
+          "target": "body",
+          "capture": false,
+          "passive": false
+        }
+      ],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/modal-actions/modal-actions.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-modal-actions",
+      "readme": "# bal-modal-actions\r\n\r\n\r\n\r",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/navbar/navbar.tsx",
+      "encapsulation": "none",
+      "tag": "bal-navbar",
+      "readme": "# Navbar\r\n\r\nA responsive horizontal navbar that can support images, links, buttons, and dropdowns \r\n\r\n## Usage\r\n\r\n```html\r\n<bal-navbar>\r\n    <span slot=\"navbar-brand\">\r\n        App Name\r\n    </span>\r\n</bal-navbar>\r\n\r\n<bal-navbar light>\r\n    <span slot=\"navbar-brand\">\r\n        App Name\r\n    </span>\r\n</bal-navbar>\r\n```\r\n\r\n```html\r\n<bal-navbar>\r\n    <span slot=\"navbar-brand\">\r\n        <img src=\"docs/assets/images/icon.svg\" />\r\n    </span>\r\n</bal-navbar>\r\n```\r\n\r\n### Light mode\r\n\r\n```html\r\n<bal-navbar light>\r\n    <span slot=\"navbar-brand\">\r\n        <img src=\"docs/assets/images/banner.svg\" />\r\n    </span>\r\n</bal-navbar>\r\n```\r\n\r\n### Actions\r\n\r\n```html\r\n<bal-navbar>\r\n    <span slot=\"navbar-brand\">\r\n        App Name\r\n    </span>\r\n    <a slot=\"navbar-start\" class=\"navbar-item\">\r\n        Home\r\n    </a>\r\n    <div slot=\"navbar-end\" class=\"navbar-item\">\r\n        <bal-button inverted>Action</bal-button>\r\n    </div>\r\n</bal-navbar>\r\n<br>\r\n<bal-navbar light logo-src=\"docs/assets/images/logo.png\">\r\n    <span slot=\"navbar-brand\">\r\n        App Name\r\n    </span>\r\n    <a slot=\"navbar-start\" class=\"navbar-item\">\r\n        Home\r\n    </a>\r\n    <div slot=\"navbar-end\" class=\"navbar-item\">\r\n        <bal-button inverted>Action</bal-button>\r\n    </div>\r\n</bal-navbar>\r\n```\r\n\r\n\r",
+      "docs": "A responsive horizontal navbar that can support images, links, buttons, and dropdowns",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "light",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "light",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "logoHref",
+          "type": "string",
+          "mutable": false,
+          "attr": "logo-href",
+          "reflectToAttr": false,
+          "docs": "",
+          "docsTags": [],
+          "default": "''",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/pagination/pagination.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-pagination",
+      "readme": "# Pagination\r\n\r\nA responsive, usable, and flexible pagination.\r\n\r\n## Usage\r\n\r\n```html\r\n<bal-pagination value=\"2\" page-range=\"3\" total-pages=\"20\"></bal-pagination>\r\n```\r\n\r",
+      "docs": "A responsive, usable, and flexible pagination.",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "disabled",
+          "reflectToAttr": false,
+          "docs": "Disables component",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "pageRange",
+          "type": "number",
+          "mutable": false,
+          "attr": "page-range",
+          "reflectToAttr": false,
+          "docs": "Specify the max visible pages before and after the selected page",
+          "docsTags": [],
+          "default": "2",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "totalPages",
+          "type": "number",
+          "mutable": false,
+          "attr": "total-pages",
+          "reflectToAttr": false,
+          "docs": "The total amount of pages",
+          "docsTags": [],
+          "default": "1",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": "number",
+          "mutable": false,
+          "attr": "value",
+          "reflectToAttr": false,
+          "docs": "Current selected page",
+          "docsTags": [],
+          "default": "1",
+          "values": [
+            {
+              "type": "number"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "next",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "next() => Promise<void>",
+          "parameters": [],
+          "docs": "",
+          "docsTags": []
+        },
+        {
+          "name": "previous",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "previous() => Promise<void>",
+          "parameters": [],
+          "docs": "",
+          "docsTags": []
+        }
+      ],
+      "events": [
+        {
+          "event": "balChange",
+          "detail": "number",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Triggers when a page change happens",
+          "docsTags": []
+        }
+      ],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [
+        "bal-icon"
+      ],
+      "dependencyGraph": {
+        "bal-pagination": [
+          "bal-icon"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/spinner/spinner.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-spinner",
+      "readme": "# Spinner\r\n\r\nA simple loading spinner.\r\n\r\n## Usage\r\n\r\n```html\r\n<bal-spinner></bal-spinner>\r\n```\r\n\r\n### Small\r\n\r\n```html\r\n<bal-spinner class=\"is-small\"></bal-spinner>\r\n```\r\n\r\n### Inverted\r\n\r\n```html\r\n<div class=\"has-background-info is-padded\">\r\n  <bal-spinner class=\"is-inverted\"></bal-spinner>\r\n</div>\r\n```\r\n\r",
+      "docs": "A simple loading spinner.",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "bal-button"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "bal-button": [
+          "bal-spinner"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/step/step.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-step",
+      "readme": "# Step\r\n\r\n## Usage\r\n\r\n```html\r\n<bal-step value=\"item-a\" label=\"Item A\">Hidden Content</bal-step>\r\n```\r\n\r\n### Activated\r\n\r\n```html\r\n<bal-step value=\"item-a\" label=\"Item A\" active>Visible Content</bal-step>\r\n```\r\n\r\n\r",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "active",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "active",
+          "reflectToAttr": false,
+          "docs": "Tell's if the step is active and the content is visible.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "bubble",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "bubble",
+          "reflectToAttr": false,
+          "docs": "If `true` a small red bubble is added to the step.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "disabled",
+          "reflectToAttr": false,
+          "docs": "If `true` the step is disabled.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "mutable": false,
+          "attr": "label",
+          "reflectToAttr": false,
+          "docs": "Label for the step.",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "mutable": false,
+          "attr": "value",
+          "reflectToAttr": false,
+          "docs": "This is the key of the step.",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "getOptions",
+          "returns": {
+            "type": "Promise<StepOptions>",
+            "docs": ""
+          },
+          "signature": "getOptions() => Promise<StepOptions>",
+          "parameters": [],
+          "docs": "Options of the step like label, value etc.",
+          "docsTags": []
+        },
+        {
+          "name": "setActive",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "setActive(active: boolean) => Promise<void>",
+          "parameters": [],
+          "docs": "Sets the step active.",
+          "docsTags": []
+        }
+      ],
+      "events": [
+        {
+          "event": "balStepChanged",
+          "detail": "any",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Emitted when the steps get rendered.",
+          "docsTags": []
+        }
+      ],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/steps/steps.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-steps",
+      "readme": "# Steps\r\n\r\nThe steps list is useful for tracking progress in multi steps forms or wizards.\r\n\r\n## Usage\r\n\r\n```html\r\n<bal-steps>\r\n  <bal-step value=\"step-a\" label=\"Step A\" active>Step A Content</bal-step>\r\n  <bal-step value=\"step-b\" label=\"Step B\">Step B Content</bal-step>\r\n  <bal-step value=\"step-c\" label=\"Step C\" disabled>Step C Content</bal-step>\r\n</bal-steps>\r\n```\r\n\r",
+      "docs": "The steps list is useful for tracking progress in multi steps forms or wizards.",
+      "docsTags": [],
+      "usage": {},
+      "props": [],
+      "methods": [
+        {
+          "name": "select",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "select(value: string) => Promise<void>",
+          "parameters": [],
+          "docs": "Select a step.",
+          "docsTags": []
+        }
+      ],
+      "events": [
+        {
+          "event": "balStepsDidChange",
+          "detail": "StepOptions",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Emitted when the changes has finished.",
+          "docsTags": []
+        }
+      ],
+      "listeners": [
+        {
+          "event": "balStepChanged",
+          "capture": false,
+          "passive": false
+        }
+      ],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/tab-item/tab-item.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-tab-item",
+      "readme": "# Tab-Item\r\n\r\n## Usage\r\n\r\n```html\r\n<bal-tab-item value=\"item-a\" label=\"Item A\">Hidden Content</bal-tab-item>\r\n```\r\n\r\n### Activated\r\n\r\n```html\r\n<bal-tab-item value=\"item-a\" label=\"Item A\" active=\"true\">Visible Content</bal-tab-item>\r\n```\r\n\r\n\r",
+      "docs": "",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "active",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "active",
+          "reflectToAttr": false,
+          "docs": "Tell's if the tab is active and the content is visible.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "bubble",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "bubble",
+          "reflectToAttr": false,
+          "docs": "If `true` a small red bubble is added to the tab.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "disabled",
+          "reflectToAttr": false,
+          "docs": "If `true` the tab is disabled.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "mutable": false,
+          "attr": "label",
+          "reflectToAttr": false,
+          "docs": "Label for the tab.",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "mutable": false,
+          "attr": "value",
+          "reflectToAttr": false,
+          "docs": "This is the key of the tab.",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "getOptions",
+          "returns": {
+            "type": "Promise<TabItemOptions>",
+            "docs": ""
+          },
+          "signature": "getOptions() => Promise<TabItemOptions>",
+          "parameters": [],
+          "docs": "Options of the tab like label, value etc.",
+          "docsTags": []
+        },
+        {
+          "name": "setActive",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "setActive(active: boolean) => Promise<void>",
+          "parameters": [],
+          "docs": "Sets the tab active.",
+          "docsTags": []
+        }
+      ],
+      "events": [
+        {
+          "event": "balTabChanged",
+          "detail": "any",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Emitted when the tabs get rendered.",
+          "docsTags": []
+        }
+      ],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/tabs/tabs.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-tabs",
+      "readme": "# Tabs\r\n\r\nSimple responsive horizontal navigation tabs.\r\n\r\n## Usage\r\n\r\n### Main Navigation\r\n\r\n```html\r\n<bal-tabs>\r\n    <bal-tab-item value=\"tab-a\" label=\"Tab A\" active=\"true\">Content of Tab A</bal-tab-item>\r\n    <bal-tab-item value=\"tab-b\" label=\"Tab B\">Content of Tab B</bal-tab-item>\r\n    <bal-tab-item bubble value=\"tab-c\" label=\"Tab C\">Content of Tab C</bal-tab-item>\r\n    <bal-tab-item disabled value=\"tab-d\" label=\"Tab D\">Content of Tab D</bal-tab-item>\r\n    <bal-button slot=\"action\">Schaden melden</bal-button>\r\n</bal-tabs>\r\n```\r\n\r\n#### With dense theme\r\n\r\n```html\r\n<bal-tabs dense>\r\n    <bal-tab-item value=\"tab-a\" label=\"Tab A\" active=\"true\">Content of Tab A</bal-tab-item>\r\n    <bal-tab-item value=\"tab-b\" label=\"Tab B\">Content of Tab B</bal-tab-item>\r\n    <bal-tab-item bubble value=\"tab-c\" label=\"Tab C\">Content of Tab C</bal-tab-item>\r\n    <bal-tab-item disabled value=\"tab-d\" label=\"Tab D\">Content of Tab D</bal-tab-item>\r\n</bal-tabs>\r\n```\r\n\r\n### Sub Navigation\r\n\r\n```html\r\n<bal-tabs rounded>\r\n    <bal-tab-item value=\"tab-a\" label=\"Tab A\" active=\"true\">Content of Tab A</bal-tab-item>\r\n    <bal-tab-item value=\"tab-b\" label=\"Tab B\">Content of Tab B</bal-tab-item>\r\n    <bal-tab-item value=\"tab-c\" label=\"Tab C\">Content of Tab C</bal-tab-item>\r\n</bal-tabs>\r\n```\r\n\r\n### Expanded\r\n\r\n```html\r\n<bal-tabs rounded expanded>\r\n    <bal-tab-item value=\"tab-a\" label=\"Tab A\" active=\"true\">Content of Tab A</bal-tab-item>\r\n    <bal-tab-item value=\"tab-b\" label=\"Tab B\">Content of Tab B</bal-tab-item>\r\n    <bal-tab-item value=\"tab-c\" label=\"Tab C\">Content of Tab C</bal-tab-item>\r\n</bal-tabs>\r\n```\r\n\r\n\r",
+      "docs": "Simple responsive horizontal navigation tabs.",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "dense",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "dense",
+          "reflectToAttr": false,
+          "docs": "If `true` the the padding gets reduced.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "expanded",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "expanded",
+          "reflectToAttr": false,
+          "docs": "If `true` the field expands over the whole width.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "rounded",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "rounded",
+          "reflectToAttr": false,
+          "docs": "If you want the rounded tab style.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "select",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "select(value: string) => Promise<void>",
+          "parameters": [],
+          "docs": "Dropdown a tab by the value of the tab item.",
+          "docsTags": []
+        }
+      ],
+      "events": [
+        {
+          "event": "balTabsDidChange",
+          "detail": "TabItemOptions",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Emitted when the changes has finished.",
+          "docsTags": []
+        }
+      ],
+      "listeners": [
+        {
+          "event": "balTabChanged",
+          "capture": false,
+          "passive": false
+        }
+      ],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/tag/tag.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-tag",
+      "readme": "# Tag\r\n\r\nA simple tag in different colors\r\n\r\n## Usage\r\n\r\n```html\r\n<bal-tag>Default</bal-tag>\r\n<bal-tag type=\"is-primary\">Primary</bal-tag>\r\n<bal-tag type=\"is-info\">Info</bal-tag>\r\n<bal-tag type=\"is-success\">Success</bal-tag>\r\n<bal-tag type=\"is-warning\">Warning</bal-tag>\r\n<bal-tag type=\"is-danger\">Danger</bal-tag>\r\n```\r\n\r",
+      "docs": "A simple tag in different colors",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "type",
+          "type": "\"\" | \"is-danger\" | \"is-info\" | \"is-primary\" | \"is-success\" | \"is-warning\"",
+          "mutable": false,
+          "attr": "type",
+          "reflectToAttr": false,
+          "docs": "The theme type of the tag. Given by bulma our css framework.",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "\"\""
+            },
+            {
+              "value": "is-danger",
+              "type": "string"
+            },
+            {
+              "value": "is-info",
+              "type": "string"
+            },
+            {
+              "value": "is-primary",
+              "type": "string"
+            },
+            {
+              "value": "is-success",
+              "type": "string"
+            },
+            {
+              "value": "is-warning",
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    },
+    {
+      "filePath": "./src/components/timeinput/timeinput.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-timeinput",
+      "readme": "# Timeinput\r\n\r\nAn input deticated for gathering the time.\r\n\r\n## Usage\r\n\r\n```html\r\n<bal-timeinput id=\"bal-timeinput-example\" value=\"12:30\"></bal-timeinput>\r\n<bal-timeinput></bal-timeinput>\r\n```\r\n\r\n<script type=\"text/javascript\">\r\n    document.getElementById('bal-timeinput-example').addEventListener('balChange', event => { \r\n        console.log('balChange on bal-timeinput-example', event) \r\n    });\r\n    document.getElementById('bal-timeinput-example').addEventListener('balBlur', event => { \r\n        console.log('balBlur on bal-timeinput-example') \r\n    });\r\n</script>\r\n\r\n### Inverted style\r\n\r\n```html\r\n<div class=\"has-background-info is-padded\">\r\n    <bal-timeinput id=\"bal-timeinput-example\" value=\"12:30\" inverted></bal-timeinput>\r\n    <bal-timeinput inverted></bal-timeinput>\r\n</div>\r\n```\r\n\r\n\r\n## Min and max time\r\n\r\n```html\r\n<bal-timeinput value=\"12:30\" min-time=\"09:30\" max-time=\"18:00\"></bal-timeinput>\r\n<bal-timeinput value=\"12:30\" min-time=\"09:10\" max-time=\"09:40\"></bal-timeinput>\r\n```\r\n\r\n## Disabled\r\n\r\n```html\r\n<bal-timeinput value=\"23:10\" disabled=\"true\"></bal-timeinput>\r\n```\r\n\r",
+      "docs": "An input deticated for gathering the time.",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "disabled",
+          "reflectToAttr": false,
+          "docs": "If `true` the button is disabled",
+          "docsTags": [],
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "inverted",
+          "type": "boolean",
+          "mutable": false,
+          "attr": "inverted",
+          "reflectToAttr": false,
+          "docs": "If `true` the timeinput can be used on blue background.",
+          "docsTags": [],
+          "default": "false",
+          "values": [
+            {
+              "type": "boolean"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "maxTime",
+          "type": "string",
+          "mutable": false,
+          "attr": "max-time",
+          "reflectToAttr": false,
+          "docs": "Latest date available for selection",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "minTime",
+          "type": "string",
+          "mutable": false,
+          "attr": "min-time",
+          "reflectToAttr": false,
+          "docs": "Earliest date available for selection",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "mutable": true,
+          "attr": "value",
+          "reflectToAttr": false,
+          "docs": "The value of the datepicker with the format `hh:mm`.",
+          "docsTags": [],
+          "default": "\"\"",
+          "values": [
+            {
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [],
+      "events": [
+        {
+          "event": "balBlur",
+          "detail": "void",
+          "bubbles": false,
+          "cancelable": false,
+          "composed": true,
+          "docs": "Emitted when either the hour or minute input field loses focus.",
+          "docsTags": []
+        },
+        {
+          "event": "balTimeinputChange",
+          "detail": "string",
+          "bubbles": true,
+          "cancelable": true,
+          "composed": true,
+          "docs": "Emitted when either the hour or the minute input has changed.\r\nIt will not be triggert if either hour or time input has never been set (i.e. \"--\" is selected).",
+          "docsTags": []
+        }
+      ],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [
+        "bal-datetimepicker"
+      ],
+      "dependencies": [],
+      "dependencyGraph": {
+        "bal-datetimepicker": [
+          "bal-timeinput"
+        ]
+      }
+    },
+    {
+      "filePath": "./src/components/toast/toast.tsx",
+      "encapsulation": "shadow",
+      "tag": "bal-toast",
+      "readme": "# Toast\r\n\r\nToast are used to inform the user with a simple text message.\r\n\r\n> Note: Toast are getting queued to not confuse the users.\r\n\r\n## Usage\r\n\r\nToast can be created with the `balToastController`. The default duration is 5000 milliseconds.\r\n\r\n<bal-button id=\"toast-default\" type=\"is-success\">Show success Toast</bal-button>\r\n<bal-button id=\"toast-warning\" type=\"is-warning\">Show warning Toast</bal-button>\r\n<bal-button id=\"toast-danger\" type=\"is-danger\">Show error Toast</bal-button>\r\n\r\n<script type=\"text/javascript\">\r\n    document.getElementById('toast-default').onclick = function() {\r\n        balToastController.create({ message: 'Hi I am a default Toast!', duration: 1000 });\r\n    };\r\n    document.getElementById('toast-warning').onclick = function() {\r\n        balToastController.create({ message: 'Warning!', type: 'is-warning' });\r\n    };\r\n    document.getElementById('toast-danger').onclick = function() {\r\n        balToastController.create({ message: 'Danger zone!', type: 'is-danger' });\r\n    };\r\n</script>\r\n\r\n```typescript\r\nimport {balToastController} from '@baloise/ui-library';\r\n\r\nbalToastController.create({ message: 'Hi I am a default Toast!', duration: 1000 });\r\nbalToastController.create({ message: 'Warning!', type: 'is-warning' });\r\nbalToastController.create({ message: 'Danger zone!', type: 'is-danger' });\r\n```\r\n\r\n### Types\r\n\r\nToast have five different types.\r\n\r\n```html\r\n<bal-toast type=\"is-success\">The Force will be with you</bal-toast>\r\n```\r\n\r\n```html\r\n<bal-toast type=\"is-warning\">A long time ago in a galaxy far, far away</bal-toast>\r\n```\r\n\r\n```html\r\n<bal-toast type=\"is-danger\">When gone am I, the last of the Jedi will you be</bal-toast>\r\n```\r\n\r\n\r",
+      "docs": "Toast are used to inform the user with a simple text message.\r\n\r\n> Note: Toast are getting queued to not confuse the users.",
+      "docsTags": [],
+      "usage": {},
+      "props": [
+        {
+          "name": "type",
+          "type": "\"is-danger\" | \"is-info\" | \"is-primary\" | \"is-success\" | \"is-warning\"",
+          "mutable": false,
+          "attr": "type",
+          "reflectToAttr": false,
+          "docs": "The theme type of the toast. Given by bulma our css framework.",
+          "docsTags": [],
+          "default": "\"is-primary\"",
+          "values": [
+            {
+              "value": "is-danger",
+              "type": "string"
+            },
+            {
+              "value": "is-info",
+              "type": "string"
+            },
+            {
+              "value": "is-primary",
+              "type": "string"
+            },
+            {
+              "value": "is-success",
+              "type": "string"
+            },
+            {
+              "value": "is-warning",
+              "type": "string"
+            }
+          ],
+          "optional": false,
+          "required": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "close",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "close() => Promise<void>",
+          "parameters": [],
+          "docs": "Closes this toast",
+          "docsTags": []
+        },
+        {
+          "name": "closeIn",
+          "returns": {
+            "type": "Promise<void>",
+            "docs": ""
+          },
+          "signature": "closeIn(duration: number) => Promise<void>",
+          "parameters": [],
+          "docs": "Closes the toast after the given duration in ms",
+          "docsTags": []
+        }
+      ],
+      "events": [],
+      "listeners": [],
+      "styles": [],
+      "slots": [],
+      "parts": [],
+      "dependents": [],
+      "dependencies": [],
+      "dependencyGraph": {}
+    }
+  ]
+}

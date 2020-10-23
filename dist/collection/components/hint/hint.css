@@ -1,0 +1,144 @@
+/**
+ *  !!! COPY-PASTED FROM APERTO !!!
+ */
+/* ===================================================
+BREAKPOINT SETTINGS
+=================================================== */
+/* ---------------------------------------------------
+Transitions
+--------------------------------------------------- */
+/**
+ * Colors
+ */
+/**
+ * Typography
+ */
+/**
+ * Radius
+ */
+/**
+ * Link
+ */
+/**
+ * Animation
+ */
+/**
+ * Shadow
+ */
+/**
+ * Section
+ */
+* {
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+bal-button.is-fullwidth {
+  width: 100%;
+}
+
+.buttons {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.buttons bal-button {
+  margin-right: 5px;
+}
+.buttons bal-button:last-child {
+  margin-right: 0;
+}
+
+span.trigger-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span.trigger-label span.label {
+  margin-bottom: 2px;
+}
+
+.is-padded-small {
+  padding: 10px !important;
+}
+
+.is-padded {
+  padding: 20px !important;
+}
+
+.is-padded-medium {
+  padding: 30px !important;
+}
+
+.is-padded-large {
+  padding: 40px !important;
+}
+
+.is-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.has-background-light {
+  background: #fafafa;
+}
+
+:host {
+  display: inline-block;
+}
+
+.bal-hint-icon {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  background: #003399;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bal-hint-icon span {
+  color: #ffffff;
+  font-weight: 700;
+}
+.bal-hint-icon:hover {
+  background: #002b82;
+}
+
+.bal-hint-content {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #003399;
+  color: #ffffff;
+  padding: 15px;
+}
+.bal-hint-content .title {
+  color: #ffffff;
+}
+.bal-hint-content .buttons {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 769px), print {
+  .bal-hint-content {
+    position: absolute;
+    margin-left: 40px;
+    top: -20px;
+    bottom: initial;
+    left: initial;
+    right: initial;
+    box-shadow: 0 0 10px 0 rgba(0, 33, 98, 0.15);
+    border-radius: 4px;
+  }
+}

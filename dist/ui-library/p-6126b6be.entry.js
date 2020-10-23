@@ -1,0 +1,1 @@
+import{r as t,h as r,H as s}from"./p-fe42e5c8.js";const e=class{constructor(r){t(this,r),this.inverted=!1}render(){return r(s,{class:["bal-card-title",this.inverted?"inverted":""].join(" "),role:"heading"},r("slot",null))}};export{e as bal_card_title}

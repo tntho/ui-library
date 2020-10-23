@@ -1,0 +1,99 @@
+/**
+ *  !!! COPY-PASTED FROM APERTO !!!
+ */
+/* ===================================================
+BREAKPOINT SETTINGS
+=================================================== */
+/* ---------------------------------------------------
+Transitions
+--------------------------------------------------- */
+/**
+ * Colors
+ */
+/**
+ * Typography
+ */
+/**
+ * Radius
+ */
+/**
+ * Link
+ */
+/**
+ * Animation
+ */
+/**
+ * Shadow
+ */
+/**
+ * Section
+ */
+* {
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+bal-button.is-fullwidth {
+  width: 100%;
+}
+
+.buttons {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.buttons bal-button {
+  margin-right: 5px;
+}
+.buttons bal-button:last-child {
+  margin-right: 0;
+}
+
+span.trigger-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span.trigger-label span.label {
+  margin-bottom: 2px;
+}
+
+.is-padded-small {
+  padding: 10px !important;
+}
+
+.is-padded {
+  padding: 20px !important;
+}
+
+.is-padded-medium {
+  padding: 30px !important;
+}
+
+.is-padded-large {
+  padding: 40px !important;
+}
+
+.is-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.has-background-light {
+  background: #fafafa;
+}
+
+:host {
+  display: block;
+}
+
+::slotted(bal-button) {
+  margin-right: 5px;
+}
+
+::slotted(bal-button:first-child) {
+  margin-right: 0;
+}

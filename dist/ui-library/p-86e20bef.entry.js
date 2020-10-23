@@ -1,0 +1,1 @@
+import{r as s,h as t,H as a}from"./p-fe42e5c8.js";const l=class{constructor(t){s(this,t),this.icon=""}render(){return t(a,{class:"bal-card-button"},t("bal-button",{expanded:!0,light:!0,"bottem-rounded":!0},this.icon?t("bal-icon",{class:"icon",name:this.icon}):"",t("span",{class:"label"},t("slot",null))))}};export{l as bal_card_button}

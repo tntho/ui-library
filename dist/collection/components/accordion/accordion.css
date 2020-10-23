@@ -1,0 +1,63 @@
+/**
+ *  !!! COPY-PASTED FROM APERTO !!!
+ */
+/* ===================================================
+BREAKPOINT SETTINGS
+=================================================== */
+/* ---------------------------------------------------
+Transitions
+--------------------------------------------------- */
+/**
+ * Colors
+ */
+/**
+ * Typography
+ */
+/**
+ * Radius
+ */
+/**
+ * Link
+ */
+/**
+ * Animation
+ */
+/**
+ * Shadow
+ */
+/**
+ * Section
+ */
+* {
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+:host {
+  display: block;
+}
+
+span.trigger-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span.trigger-label span.label {
+  margin-bottom: 2px;
+}
+
+bal-icon {
+  height: 24px;
+  margin-right: 2px;
+}
+
+.accordion-content.is-info {
+  border-top: 1px solid #d3dbeb;
+}
+
+.is-fullwidth {
+  width: 100%;
+}

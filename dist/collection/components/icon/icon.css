@@ -1,0 +1,342 @@
+@charset "UTF-8";
+.icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.icon.is-small {
+  height: 1rem;
+  width: 1rem;
+}
+.icon.is-medium {
+  height: 2rem;
+  width: 2rem;
+}
+.icon.is-large {
+  height: 3rem;
+  width: 3rem;
+}
+
+/**
+ *  !!! COPY-PASTED FROM APERTO !!!
+ */
+/* ===================================================
+BREAKPOINT SETTINGS
+=================================================== */
+/* ---------------------------------------------------
+Transitions
+--------------------------------------------------- */
+/**
+ * Colors
+ */
+/**
+ * Typography
+ */
+/**
+ * Radius
+ */
+/**
+ * Link
+ */
+/**
+ * Animation
+ */
+/**
+ * Shadow
+ */
+/**
+ * Section
+ */
+* {
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+.icon-alert:before {
+  content: "";
+}
+
+/* '' */
+.icon-alert-circle:before {
+  content: "";
+}
+
+/* '' */
+.icon-account:before {
+  content: "";
+}
+
+/* '' */
+.icon-answer:before {
+  content: "";
+}
+
+/* '' */
+.icon-call:before {
+  content: "";
+}
+
+/* '' */
+.icon-caret-down:before {
+  content: "";
+}
+
+/* '' */
+.icon-caret-left:before {
+  content: "";
+}
+
+/* '' */
+.icon-caret-right:before {
+  content: "";
+}
+
+/* '' */
+.icon-caret-up:before {
+  content: "";
+}
+
+/* '' */
+.icon-check-circle:before {
+  content: "";
+}
+
+/* '' */
+.icon-check:before {
+  content: "";
+}
+
+/* '' */
+.icon-close-big:before {
+  content: "";
+}
+
+/* '' */
+.icon-close-small:before {
+  content: "";
+}
+
+/* '' */
+.icon-close-thin:before {
+  content: "";
+}
+
+/* '' */
+.icon-contact:before {
+  content: "";
+}
+
+/* '' */
+.icon-copy:before {
+  content: "";
+}
+
+/* '' */
+.icon-date:before {
+  content: "";
+}
+
+/* '' */
+.icon-document:before {
+  content: "";
+}
+
+/* '' */
+.icon-download:before {
+  content: "";
+}
+
+/* '' */
+.icon-edit:before {
+  content: "";
+}
+
+/* '' */
+.icon-general-consultant:before {
+  content: "";
+}
+
+/* '' */
+.icon-general-edit:before {
+  content: "";
+}
+
+/* '' */
+.icon-info-circle:before {
+  content: "";
+}
+
+/* '' */
+.icon-info:before {
+  content: "";
+}
+
+/* '' */
+.icon-locate:before {
+  content: "";
+}
+
+/* '' */
+.icon-location:before {
+  content: "";
+}
+
+/* '' */
+.icon-menu-bars:before {
+  content: "";
+}
+
+/* '' */
+.icon-menu-dots:before {
+  content: "";
+}
+
+/* '' */
+.icon-message:before {
+  content: "";
+}
+
+/* '' */
+.icon-minus:before {
+  content: "";
+}
+
+/* '' */
+.icon-nav-back:before {
+  content: "";
+}
+
+/* '' */
+.icon-nav-dropdown:before {
+  content: "";
+}
+
+/* '' */
+.icon-nav-go-down:before {
+  content: "";
+}
+
+/* '' */
+.icon-nav-go-large:before {
+  content: "";
+}
+
+/* '' */
+.icon-nav-go-left-no-padding:before {
+  content: "";
+}
+
+/* '' */
+.icon-nav-go-left:before {
+  content: "";
+}
+
+/* '' */
+.icon-nav-go-right-no-padding:before {
+  content: "";
+}
+
+/* '' */
+.icon-nav-go-right:before {
+  content: "";
+}
+
+/* '' */
+.icon-nav-go-small:before {
+  content: "";
+}
+
+/* '' */
+.icon-nav-go-up:before {
+  content: "";
+}
+
+/* '' */
+.icon-nav-success:before {
+  content: "";
+}
+
+/* '' */
+.icon-plus:before {
+  content: "";
+}
+
+/* '' */
+.icon-read-only:before {
+  content: "";
+}
+
+/* '' */
+.icon-refresh:before {
+  content: "";
+}
+
+/* '' */
+.icon-search:before {
+  content: "";
+}
+
+/* '' */
+.icon-social-facebook-line:before {
+  content: "";
+}
+
+/* '' */
+.icon-social-linkedin-line:before {
+  content: "";
+}
+
+/* '' */
+.icon-social-xing-line:before {
+  content: "";
+}
+
+/* '' */
+.icon-trash:before {
+  content: "";
+}
+
+/* '' */
+.icon-upload:before {
+  content: "";
+}
+
+/* '' */
+.icon-clock:before {
+  content: "";
+}
+
+/* '' */
+:host {
+  display: inline-block;
+  position: static;
+}
+
+.icon {
+  font-size: 24px;
+}
+.icon.is-small {
+  font-size: 16px;
+}
+.icon.is-medium {
+  font-size: 32px;
+}
+.icon.is-large {
+  font-size: 47px;
+}
+.icon i.font {
+  font-family: "bal-ui-library";
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  color: #003399;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+}

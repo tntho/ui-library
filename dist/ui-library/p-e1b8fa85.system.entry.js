@@ -1,0 +1,1 @@
+System.register(["./p-582db24d.system.js"],(function(t){"use strict";var e,r,n;return{setters:[function(t){e=t.r;r=t.h;n=t.H}],execute:function(){var s=t("bal_data_label",function(){function t(t){e(this,t);this.required=false}t.prototype.render=function(){return r(n,{class:"bal-data-label"},r("slot",null),this.required?"*":"")};return t}())}}}));

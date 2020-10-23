@@ -1,0 +1,1 @@
+import{r as a,h as s,H as r}from"./p-fe42e5c8.js";const t=class{constructor(s){a(this,s)}render(){return s(r,{class:"bal-data-value"},s("slot",null))}};export{t as bal_data_value}

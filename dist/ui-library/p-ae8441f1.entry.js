@@ -1,0 +1,1 @@
+import{r as s,h as t,H as a}from"./p-fe42e5c8.js";const r=class{constructor(t){s(this,t),this.border=!1,this.horizontal=!1}render(){return t(a,{class:["bal-data",this.border?"has-border":"",this.horizontal?"is-horizontal":""].join(" ")},t("slot",null))}};export{r as bal_data}

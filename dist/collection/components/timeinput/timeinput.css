@@ -1,0 +1,170 @@
+/**
+ *  !!! COPY-PASTED FROM APERTO !!!
+ */
+/* ===================================================
+BREAKPOINT SETTINGS
+=================================================== */
+/* ---------------------------------------------------
+Transitions
+--------------------------------------------------- */
+/**
+ * Colors
+ */
+/**
+ * Typography
+ */
+/**
+ * Radius
+ */
+/**
+ * Link
+ */
+/**
+ * Animation
+ */
+/**
+ * Shadow
+ */
+/**
+ * Section
+ */
+* {
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+input.input,
+textarea.textarea {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-width: 1px;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 1px 0 2px 0;
+  font-size: 1.125rem;
+  outline: none;
+  color: #222222;
+}
+input.input:focus, input.input.is-focused,
+textarea.textarea:focus,
+textarea.textarea.is-focused {
+  border-width: 2px;
+  border-color: #003399;
+  padding: 1px 0 1px 0;
+  box-shadow: none;
+}
+input.input:disabled,
+textarea.textarea:disabled {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+input.input.is-inverted,
+textarea.textarea.is-inverted {
+  color: #ffffff;
+  border-bottom-color: #99add6;
+}
+input.input.is-inverted:focus, input.input.is-inverted.is-focused,
+textarea.textarea.is-inverted:focus,
+textarea.textarea.is-inverted.is-focused {
+  border-width: 2px;
+  border-bottom-color: #ffffff;
+}
+input.input.is-inverted:disabled,
+textarea.textarea.is-inverted:disabled {
+  background-color: #002b82;
+}
+input.input.is-inverted::-webkit-input-placeholder,
+textarea.textarea.is-inverted::-webkit-input-placeholder {
+  color: #7188b8;
+}
+
+.control.has-icons-right .input,
+.control.has-icons-right .select select {
+  padding-right: 31px !important;
+}
+
+.control.has-icons-right .icon {
+  top: 5px !important;
+  height: 31px !important;
+  width: 31px !important;
+}
+
+label.label bal-hint {
+  margin-left: 8px;
+}
+
+:host {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+:host .stepper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+:host .stepper .stepper-btn {
+  border: none;
+  outline: 0;
+  padding: 5px 0 5px 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+:host .stepper .stepper-btn:disabled {
+  cursor: not-allowed;
+}
+:host .stepper .stepper-btn:disabled * {
+  color: #99add6;
+  stroke: #99add6;
+}
+:host .stepper .time-box {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-width: 1px;
+  border-radius: 0;
+  box-shadow: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 1.125rem;
+  outline: none;
+  color: #222222;
+  min-height: 45px;
+}
+:host .stepper .time-box:focus, :host .stepper .time-box.is-focused {
+  border-width: 2px;
+  border-color: #003399;
+  box-shadow: none;
+}
+:host .stepper .time-box:disabled {
+  background-color: #f0fbff;
+  cursor: not-allowed;
+}
+:host .time-divider {
+  align-items: stretch;
+  display: inline-flex;
+  flex-direction: column;
+  height: 100%;
+}
+:host .time-divider:after, :host .time-divider:before {
+  content: "";
+  width: 0.3em;
+  height: 0.3em;
+  margin-top: 0.15em;
+  margin-bottom: 0.15em;
+  margin-left: 0.35em;
+  margin-right: 0.35em;
+  border-radius: 50%;
+  background-color: #003399;
+}
+:host .is-inverted:after, :host .is-inverted:before {
+  background-color: #ffffff;
+}

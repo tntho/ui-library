@@ -1,0 +1,1 @@
+import{r as s,h as t,H as r}from"./p-fe42e5c8.js";const i=class{constructor(t){s(this,t),this.border=!1,this.flat=!1,this.square=!1,this.inverted=!1}render(){return t(r,{class:["bal-card",this.square?"is-square":"",this.border?"has-border":"",this.flat?"is-flat":"",this.inverted?"is-inverted":""].join(" ")},t("slot",null))}};export{i as bal_card}
